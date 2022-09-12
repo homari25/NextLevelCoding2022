@@ -3,12 +3,12 @@ let score = document.getElementById("score");
 let time = document.getElementById("time");
 let scoreCount = 0;
 let timeCount = 20;
-let quizFood = ['okonomiyaki','takoyaki','care-raisu','sushi','omuraisu','hitsumabushi','monjayaki','nattou','tempura'];
+let quizFood = ['okonomiyaki','takoyaki','care-raisu','sushi','omuraisu','hitsumabushi','monjayaki','nattou','tempura','sukiyaki','misoshiru','kaisendon'];
 let textInput = document.getElementById("textbox");
 let enter = document.getElementById("enter");
 let message = document.getElementById('message');
 let picture = document.getElementById("picture");
-let myPics = ["okonomiyaki.jpg","takoyaki.jpg","care-raisu.jpg","sushi.jpg","omuraisu.jpg","hitsumabushi.jpeg","monjayaki.jpeg","nattou.jpeg","tempura.jpeg"];
+let myPics = ["okonomiyaki.jpg","takoyaki.jpg","care-raisu.jpg","sushi.jpg","omuraisu.jpg","hitsumabushi.jpeg","monjayaki.jpeg","nattou.jpeg","tempura.jpeg","sukiyaki.jpg","misoshiru.jpg","kaisendon.jpg"];
 
 
 // picture.innerHTML = "<img src='" + myPics[Math.floor(Math.random() * myPics.length)] + "'>";
