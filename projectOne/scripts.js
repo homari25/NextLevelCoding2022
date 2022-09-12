@@ -49,7 +49,7 @@ enter.onclick = function(){
 
   // quiz.innerHTML = quizFood[answer];
   score.innerHTML = "SCORE " + scoreCount;
-  textInput.value = " ";
+  textInput.value = "";
 }
 
 // Pick & show random word
