@@ -61,6 +61,8 @@ setInterval(timer,1000);
 function timer(){
 time.innerHTML = "TIME " + timeCount;
 
+
+
 if (timeCount > 0) {
   timeCount--;
 } else {
