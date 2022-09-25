@@ -37,7 +37,7 @@ drawStatueOfLiberty();
 
 function drawStatueOfLiberty(){
   let yoff = 0;
- image(statueOfLiberty,300, 300,600,700);
+ image(statueOfLiberty,width/2, height/2,600,700);
  loadPixels();
   for (let y = 0; y < height; y+=pixelLevel) {
     let xoff = 0;
