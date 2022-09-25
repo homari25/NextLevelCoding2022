@@ -13,7 +13,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(2048, 2048);
   angleMode(DEGREES);
   background(0);
   frameRate(120);
@@ -37,7 +37,7 @@ drawStatueOfLiberty();
 
 function drawStatueOfLiberty(){
   let yoff = 0;
- image(statueOfLiberty,300, 300,300,350);
+ image(statueOfLiberty,300, 300,600,700);
  loadPixels();
   for (let y = 0; y < height; y+=pixelLevel) {
     let xoff = 0;
@@ -62,7 +62,7 @@ function drawStatueOfLiberty(){
 
 function drawForbiddenCity(){
     let yoffTwo = 0;
-  image(forbiddenCity,0,0,640,360);
+  image(forbiddenCity,0,0,1280,720);
   for (let y = 0; y < forbiddenCity.height; y+=pixelLevelTwo) {
     let xoffTwo = 0;
    loadPixels();
