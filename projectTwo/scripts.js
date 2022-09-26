@@ -66,7 +66,7 @@ function drawForbiddenCity(){
   for (let y = 0; y < height; y+=pixelLevelTwo) {
     let xoffTwo = 0;
    loadPixels();
-    for (let x = 0; x < width; x+=pixelLevelTwo) {
+    for (let x = 0; x < forbiddenCity.width; x+=pixelLevelTwo) {
       let j = (x + y * width) * 4
       let randomValueTwo = random(200,250);
    //   let n = noise(xoff,yoff) * 255;
