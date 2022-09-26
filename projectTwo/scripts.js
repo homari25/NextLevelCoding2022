@@ -63,7 +63,7 @@ function drawStatueOfLiberty(){
 function drawForbiddenCity(){
     let yoffTwo = 0;
   image(forbiddenCity,0,0,1280,720);
-  for (let y = 0; y < height; y+=pixelLevelTwo) {
+  for (let y = 0; y < forbiddenCity.height; y+=pixelLevelTwo) {
     let xoffTwo = 0;
    loadPixels();
     for (let x = 0; x < forbiddenCity.width; x+=pixelLevelTwo) {
