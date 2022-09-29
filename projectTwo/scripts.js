@@ -19,14 +19,14 @@ function draw() {
   
   for (let y = 0; y < height; y++) {
    for (let x = 0; x < width; x++) {
-     var pix = blue(usMap.get(x,y));
-    // let index = (x + y * width) * 4;
-    // let r = worldMap.pixels [index + 0];
-    // let g = worldMap.pixels [index + 1];
-    // let b = worldMap.pixels [index + 2];
+    //  var pix = blue(usMap.get(x,y));
+    let index = (x + y * width) * 4;
+    let r = worldMap.pixels [index + 0];
+    let g = worldMap.pixels [index + 1];
+    let b = worldMap.pixels [index + 2];
 
      
-    // let bright = ((0.3 * r) + (0.59* g) + (0.11 * b));
+    let pix = ((0.3 * r) + (0.59* g) + (0.11 * b));
 
    // image(usFlag,x,y,2,2);
 
@@ -40,12 +40,11 @@ function draw() {
     } else if (pix >= 170 && pix <200) {
       image(usFlag,x,y,2,2);
      x = x + diameter - 0.2;
-         //   fill(0);
-    // } else if (pix > 128 && pix <= 192 ) {
-    //   text(" ",x,y);
-    // }
-    //  else if (pix > 192 && pix <= 255 ) {
-    //   text("🇨🇳",x,y);
+    } else if (pix > 128 && pix <= 192 ) {
+      text(" ",x,y);
+    }
+     else if (pix > 192 && pix <= 255 ) {
+      text("🇨🇳",x,y);
     }
     // } else if (bright >= 50 && bright < 80) {
     //   text("🇹🇷",x,y);
