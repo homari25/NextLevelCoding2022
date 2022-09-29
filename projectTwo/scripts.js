@@ -21,9 +21,9 @@ function draw() {
    for (let x = 0; x < width; x++) {
     //  var pix = blue(usMap.get(x,y));
     let index = (x + y * width) * 4;
-    let r = worldMap.pixels [index + 0];
-    let g = worldMap.pixels [index + 1];
-    let b = worldMap.pixels [index + 2];
+    let r = usMap.pixels [index + 0];
+    let g = usMap.pixels [index + 1];
+    let b = usMap.pixels [index + 2];
 
      
     let pix = ((0.3 * r) + (0.59* g) + (0.11 * b));
