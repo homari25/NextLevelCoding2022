@@ -28,9 +28,9 @@ function draw() {
     let pix = ((0.3 * r) + (0.59* g) + (0.11 * b));
 
     if (pix <= 12.5 && x < usMap.width && y < usMap.height) {
-      image(usFlag,x,y,5,5);
+      noFill();
     } else if (pix > 12.5&& pix <= 25) {
-      image(chinaFlag,x,y,5,5); 
+      noFill();
     } else if (pix > 25.0  && pix < 37.5) {
       image(usFlag,x,y,5,5);
     } else if (pix > 37.5 && pix <= 50 ) {
@@ -38,31 +38,31 @@ function draw() {
     } else if (pix > 50 && pix <= 62.5 ) {
       image(chinaFlag,x,y,5,5); 
     } else if (pix > 62.5 && pix <= 75) {
-      image(usFlag,x,y,5,5);
+      image(chinaFlag,x,y,5,5);
     } else if (pix > 75 && pix <= 87.5) {
       image(chinaFlag,x,y,5,5); 
     } else if (pix > 87.5 && pix <= 100) {
       image(usFlag,x,y,5,5);
     } else if (pix > 100 && pix <=112.5) {
-      image(chinaFlag,x,y,5,5); 
+      image(usFlag,x,y,5,5); 
     } else if (pix > 112.5 && pix <=125) {
-      image(chinaFlag,x,y,5,5); 
+      image(usFlag,x,y,5,5); 
     } else if (pix > 125 && pix <=137.5) {
-      image(chinaFlag,x,y,5,5); 
+      image(usFlag,x,y,5,5); 
     } else if (pix > 137.5 && pix <=150) {
-      image(chinaFlag,x,y,5,5); 
+      image(usFlag,x,y,5,5); 
     } else if (pix > 150 && pix <=162.5) {
-      image(chinaFlag,x,y,5,5); 
+      image(usFlag,x,y,5,5); 
     } else if (pix > 162.5 && pix <=175) {
-      image(chinaFlag,x,y,5,5); 
+      image(usFlag,x,y,5,5); 
     } else if (pix > 175 && pix <=187.5) {
-      image(chinaFlag,x,y,5,5); 
+      image(usFlag,x,y,5,5); 
     } else if (pix > 187.5 && pix <200) {
-      image(chinaFlag,x,y,5,5); 
+      image(usFlag,x,y,5,5); 
     } else if (pix > 187.5 && pix <200) {
-      image(chinaFlag,x,y,5,5); 
+      image(usFlag,x,y,5,5); 
     } else if (pix > 187.5 && pix <200) {
-      image(chinaFlag,x,y,5,5); 
+      image(usFlag,x,y,5,5); 
     }
     x = x + diameter - 1;
   }
