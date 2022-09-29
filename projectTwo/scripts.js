@@ -55,8 +55,9 @@ function draw() {
     //   text("🇺🇸",x,y);
     // } else if (bright >= 140 && bright <170) {
     //   text("🇨🇳",x,y);
+    x = x + diameter - 1;
    }
-   x = x + diameter - 1;
+   y = y + diameter - 1;
 }
-  y = y + diameter - 1;
+
 }
