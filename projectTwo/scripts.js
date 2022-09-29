@@ -39,13 +39,14 @@ function draw() {
         image(chinaFlag,x,y,2,2); 
     } else if (pix >= 170 && pix <200) {
       image(usFlag,x,y,2,2);
-     x = x + diameter - 0.2;
+
     } else if (pix > 128 && pix <= 192 ) {
       text(" ",x,y);
     }
      else if (pix > 192 && pix <= 255 ) {
       text("🇨🇳",x,y);
     }
+    x = x + diameter - 0.2;
     // } else if (bright >= 50 && bright < 80) {
     //   text("🇹🇷",x,y);
     // } else if (bright >= 80 && bright < 110) {
