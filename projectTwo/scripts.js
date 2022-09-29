@@ -32,40 +32,40 @@ function draw() {
     } else if (pix > 12.5&& pix <= 25) {
       noFill();
     } else if (pix > 25.0  && pix < 37.5) {
-      image(usFlag,x,y,5,5);
+      noFill();
     } else if (pix > 37.5 && pix <= 50 ) {
-      image(usFlag,x,y,5,5);
+      image(usFlag,x,y,10,10);
     } else if (pix > 50 && pix <= 62.5 ) {
-      image(chinaFlag,x,y,5,5); 
+      image(chinaFlag,x,y,10,10); 
     } else if (pix > 62.5 && pix <= 75) {
-      image(chinaFlag,x,y,5,5);
+      image(chinaFlag,x,y,10,10);
     } else if (pix > 75 && pix <= 87.5) {
-      image(chinaFlag,x,y,5,5); 
+      image(chinaFlag,x,y,10,10); 
     } else if (pix > 87.5 && pix <= 100) {
-      image(usFlag,x,y,5,5);
+      image(usFlag,x,y,10,10);
     } else if (pix > 100 && pix <=112.5) {
-      image(usFlag,x,y,5,5); 
+      image(usFlag,x,y,10,10); 
     } else if (pix > 112.5 && pix <=125) {
-      image(usFlag,x,y,5,5); 
+      image(usFlag,x,y,10,10); 
     } else if (pix > 125 && pix <=137.5) {
-      image(usFlag,x,y,5,5); 
+      image(usFlag,x,y,10,10); 
     } else if (pix > 137.5 && pix <=150) {
-      image(usFlag,x,y,5,5); 
+      image(usFlag,x,y,10,10); 
     } else if (pix > 150 && pix <=162.5) {
-      image(usFlag,x,y,5,5); 
+      image(usFlag,x,y,10,10); 
     } else if (pix > 162.5 && pix <=175) {
-      image(usFlag,x,y,5,5); 
+      image(usFlag,x,y,10,10); 
     } else if (pix > 175 && pix <=187.5) {
-      image(usFlag,x,y,5,5); 
+      image(usFlag,x,y,10,10); 
     } else if (pix > 187.5 && pix <200) {
-      image(usFlag,x,y,5,5); 
+      image(usFlag,x,y,10,10); 
     } else if (pix > 187.5 && pix <200) {
-      image(usFlag,x,y,5,5); 
+      image(usFlag,x,y,10,10); 
     } else if (pix > 187.5 && pix <200) {
-      image(usFlag,x,y,5,5); 
+      image(usFlag,x,y,10,10); 
     }
-    x = x + diameter - 1;
+    x = x + diameter - 0.5;
   }
-    y = y + diameter - 1;
+    y = y + diameter - 0.5;
   }
 }
