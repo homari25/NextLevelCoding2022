@@ -38,7 +38,7 @@ function draw() {
     } else if (pix > 50 && pix <= 62.5 ) {
       image(chinaFlag,x,y,5,5); 
     } else if (pix > 62.5 && pix <= 75) {
-      text("🇹🇷",x,y);
+      image(usFlag,x,y,5,5);
     } else if (pix > 75 && pix <= 87.5) {
       image(chinaFlag,x,y,5,5); 
     } else if (pix > 87.5 && pix <= 100) {
