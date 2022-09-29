@@ -33,12 +33,12 @@ function draw() {
    // if(mouseover)
 
 
-    // if (pix <= 12.5 && x < usMap.width && y < usMap.height) {
-    //   fill(0);
-    // } else if (pix > 12.5&& pix <= 50) {
-    //     image(chinaFlag,x,y,2,2); 
-    // } else if (pix >= 170 && pix <200) {
-    //   image(usFlag,x,y,2,2);
+    if (pix <= 12.5 && x < usMap.width && y < usMap.height) {
+      fill(0);
+    } else if (pix > 12.5&& pix <= 50) {
+        image(chinaFlag,x,y,2,2); 
+    } else if (pix >= 170 && pix <200) {
+      image(usFlag,x,y,2,2);
     //  x = x + diameter - 0.2;
          //   fill(0);
     // } else if (pix > 128 && pix <= 192 ) {
@@ -57,6 +57,7 @@ function draw() {
     //   text("🇨🇳",x,y);
    }
     y = y + diameter - 0.2;
+}
 }
 
 // let usMap,usFlag,chinaFlag;
