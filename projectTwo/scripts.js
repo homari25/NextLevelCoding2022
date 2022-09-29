@@ -13,6 +13,7 @@ function setup() {
 
 function draw() {
   usMap.loadPixels();
+  image(usMap,0,0,width,height);
   let diameter =10;
   pixelDensity(1);
 //  background(255,0,0);
