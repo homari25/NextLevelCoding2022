@@ -39,7 +39,7 @@ function draw() {
         image(chinaFlag,x,y,2,2); 
     } else if (pix >= 170 && pix <200) {
       image(usFlag,x,y,2,2);
-    //  x = x + diameter - 0.2;
+     x = x + diameter - 0.2;
          //   fill(0);
     // } else if (pix > 128 && pix <= 192 ) {
     //   text(" ",x,y);
