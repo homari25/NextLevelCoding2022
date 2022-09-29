@@ -13,7 +13,7 @@ function setup() {
 
 function draw() {
   usMap.loadPixels();
-  let diameter =3;
+  let diameter =10;
   pixelDensity(1);
 //  background(255,0,0);
   
@@ -46,7 +46,7 @@ function draw() {
      else if (pix > 192 && pix <= 255 ) {
       text("🇨🇳",x,y);
     }
-    x = x + diameter - 0.2;
+
     // } else if (bright >= 50 && bright < 80) {
     //   text("🇹🇷",x,y);
     // } else if (bright >= 80 && bright < 110) {
@@ -56,45 +56,7 @@ function draw() {
     // } else if (bright >= 140 && bright <170) {
     //   text("🇨🇳",x,y);
    }
-    y = y + diameter - 0.2;
+   x = x + diameter - 1;
 }
+  y = y + diameter - 1;
 }
-
-// let usMap,usFlag,chinaFlag;
-// let pixelLevel = 8;
-// let inc = 0.02;
-
-// function preload(){
-//   usMap = loadImage("map.png");
-// }
-
-// function setup() {
-//   createCanvas(800, 800);
-//   frameRate(120);
-// }
-
-// function draw(){
-//   background(random(0,30));
-//   pixelDensity(0.5);
-//   let yoff = 0;
-//  image(usMap,0,100,width,height/4*3);
-//   loadPixels();
-
-//   for (let y = 0; y < height; y+=pixelLevel) {
-//     let xoff = 0;
-//     for (let x = 0; x < width; x+=pixelLevel) {
-//       let index = (x + y * width) * 4
-//       let randomValue = random(100,250);
-//    //   let n = noise(xoff,yoff) * 255;
-//       let blueValue = noise(100);
-//       let r = pixels[index + 0] = frameCount * yoff;
-//       let g = pixels[index + 1];
-//       let b = randomValue - pixels[index + 2];
-//       let a = pixels[index + 3];
-//       fill(r, g, b, a);
-//       square(x + 10, y - 10, pixelLevel);
-//       xoff +=inc;
-//       }
-//     yoff+=inc;
-//     }
-// }
