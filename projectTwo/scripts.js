@@ -34,7 +34,7 @@ function draw() {
     } else if (pix > 25.0  && pix < 37.5) {
       noFill();
     } else if (pix > 37.5 && pix <= 50 ) {
-      image(usFlag,x,y,10,10);
+      noFill();
     } else if (pix > 50 && pix <= 62.5 ) {
       image(chinaFlag,x,y,10,10); 
     } else if (pix > 62.5 && pix <= 75) {
@@ -42,9 +42,9 @@ function draw() {
     } else if (pix > 75 && pix <= 87.5) {
       image(chinaFlag,x,y,10,10); 
     } else if (pix > 87.5 && pix <= 100) {
-      image(usFlag,x,y,10,10);
+      image(chinaFlag,x,y,10,10);
     } else if (pix > 100 && pix <=112.5) {
-      image(usFlag,x,y,10,10); 
+      image(chinaFlag,x,y,10,10); 
     } else if (pix > 112.5 && pix <=125) {
       image(usFlag,x,y,10,10); 
     } else if (pix > 125 && pix <=137.5) {
