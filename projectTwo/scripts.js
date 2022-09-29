@@ -19,7 +19,7 @@ function draw() {
   
   for (let y = 0; y < height; y++) {
    for (let x = 0; x < width; x++) {
-     var pix = blue(usMap.get(x,y))
+     var pix = blue(usMap.get(x,y));
     // let index = (x + y * width) * 4;
     // let r = worldMap.pixels [index + 0];
     // let g = worldMap.pixels [index + 1];
@@ -57,7 +57,6 @@ function draw() {
     //   text("🇨🇳",x,y);
    }
     y = y + diameter - 0.2;
-  }
 }
 
 // let usMap,usFlag,chinaFlag;
