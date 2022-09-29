@@ -14,7 +14,7 @@ function setup() {
 function draw() {
   usMap.loadPixels();
   let diameter =3;
-  pixelDensity(0.5);
+  pixelDensity(1);
 //  background(255,0,0);
   
   for (let y = 0; y < height; y++) {
@@ -28,7 +28,7 @@ function draw() {
      
     // let bright = ((0.3 * r) + (0.59* g) + (0.11 * b));
 
-    image(usFlag,x,y,2,2);
+   // image(usFlag,x,y,2,2);
 
    // if(mouseover)
 
