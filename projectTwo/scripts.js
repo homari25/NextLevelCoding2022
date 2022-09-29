@@ -27,13 +27,19 @@ function draw() {
 
      
     // let bright = ((0.3 * r) + (0.59* g) + (0.11 * b));
-    if (pix <= 12.5 && x < usMap.width && y < usMap.height) {
-      fill(0);
-    } else if (pix > 12.5&& pix <= 50) {
-        image(chinaFlag,x,y,2,2); 
-    } else if (pix >= 170 && pix <200) {
-      image(usFlag,x,y,2,2);
-     x = x + diameter - 0.2;
+
+    image(usFlag,x,y,2,2);
+
+   // if(mouseover)
+
+
+    // if (pix <= 12.5 && x < usMap.width && y < usMap.height) {
+    //   fill(0);
+    // } else if (pix > 12.5&& pix <= 50) {
+    //     image(chinaFlag,x,y,2,2); 
+    // } else if (pix >= 170 && pix <200) {
+    //   image(usFlag,x,y,2,2);
+    //  x = x + diameter - 0.2;
          //   fill(0);
     // } else if (pix > 128 && pix <= 192 ) {
     //   text(" ",x,y);
