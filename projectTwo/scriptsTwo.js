@@ -2,7 +2,7 @@ let capture,chinaFlag,usFlag,nofill;
 
 function preload(){
 capture = createCapture(VIDEO);
-//  usMap = loadImage("map.png"); 
+//  capture = loadImage("map.png"); 
   chinaFlag = loadImage("china.png");
   usFlag = loadImage("us.png");
   nofill = loadImage("nofill.png")
@@ -16,7 +16,7 @@ capture.hide();
 }
 
 function draw() {
- // image(usMap,0,0,usMap.width,usMap.height);
+ // image(capture,0,0,capture.width,capture.height);
   capture.loadPixels();
   let diameter = 10;
   pixelDensity(1);
@@ -24,9 +24,9 @@ function draw() {
   for (let y = 0; y < height; y++) {
    for (let x = 0; x < width; x++) {
     let index = (x + y * width) * 4;
-    let r = usMap.pixels[index + 0];
-    let g = usMap.pixels[index + 1];
-    let b = usMap.pixels[index + 2];
+    let r = capture.pixels[index + 0];
+    let g = capture.pixels[index + 1];
+    let b = capture.pixels[index + 2];
 
     let pix = ((0.08 * r) + (0.54* g) + (0.11 * b));
 
@@ -86,6 +86,6 @@ function draw() {
     y = y + diameter - 1;
   }
 
-  let closeup = usMap.get(mouseX,mouseY);
+  let closeup = capture.get(mouseX,mouseY);
   image(closeup,mouseX,mouseY,200,200);    
 }
