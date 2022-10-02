@@ -36,7 +36,7 @@ function draw() {
     } else if (pix > 37.5 && pix <= 50 ) {
       image(nofill,x,y,10,10); 
     } else if (pix > 50 && pix <= 62.5 ) {
-      image(chinaFlag,x,y,10,10); 
+      image(nofill,x,y,10,10); 
     } else if (pix > 62.5 && pix <= 75) {
       image(usFlag,x,y,10,10);
     } else if (pix > 75 && pix <= 87.5) {
