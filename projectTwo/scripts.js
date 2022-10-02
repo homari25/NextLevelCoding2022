@@ -1,7 +1,7 @@
 let usMap,chinaFlag,usFlag,nofill;
 
 function preload(){
-  usMap = loadImage("map.png");
+  usMap = loadImage("worldmap.png");
   chinaFlag = loadImage("china.png");
   usFlag = loadImage("us.png");
   nofill = loadImage("nofill.png")
