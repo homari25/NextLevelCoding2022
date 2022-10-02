@@ -2,9 +2,12 @@
     position:relative;
     width:50%;
     height:100%;
+    left:25%;
 }
 
 .column .side {
+    top:0%;
+    left:0%;
     float:left;
     display:block;
     width:25%;
@@ -13,6 +16,7 @@
 .column .rightside {
     display:block;
     width:25%;
+    left:75%;
 }
 
 h1{
