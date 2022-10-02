@@ -8,12 +8,8 @@ function preload(){
   nofill = loadImage("nofill.png")
 }
 
-
-function draw() {
   chinaFlag.style.top = 10 + 'px';
   chinaFlag.style.width = 10 + 'px';
-
-}
 
 
 //   for(let i = 0;i <= 50;i++) {
