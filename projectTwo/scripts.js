@@ -1,10 +1,11 @@
-let usMap,chinaFlag,usFlag,nofill;
+let usMap,chinaFlag,usFlag,nofill,nofillTwo;
 
 function preload(){
   usMap = loadImage("map.png");
   chinaFlag = loadImage("china.png");
   usFlag = loadImage("us.png");
   nofill = loadImage("nofill.png")
+  nofillTwo = loadImage("nofill2.png")
 }
 
 function setup() {
@@ -30,11 +31,11 @@ function draw() {
     if (pix <= 12.5 && x < usMap.width && y < usMap.height) {
       image(nofill,x,y,10,10); 
     } else if (pix > 12.5&& pix <= 25) {
-      image(nofill,x,y,10,10); 
+      image(nofillTwo,x,y,10,10); 
     } else if (pix > 25.0  && pix < 37.5) {
       image(nofill,x,y,10,10); 
     } else if (pix > 37.5 && pix <= 50 ) {
-      image(nofill,x,y,10,10); 
+      image(nofillTwo,x,y,10,10); 
     } else if (pix > 50 && pix <= 62.5 ) {
       image(chinaFlag,x,y,10,10); 
     } else if (pix > 62.5 && pix <= 75) {
@@ -56,7 +57,7 @@ function draw() {
     } else if (pix > 162.5 && pix <=175) {
       image(usFlag,x,y,10,10); 
     } else if (pix > 175 && pix <=187.5) {
-      image(nofill,x,y,10,10); 
+      image(nofillTwo,x,y,10,10); 
     } else if (pix > 200 && pix <= 212.5) {
       image(chinaFlag,x,y,10,10); 
     } else if (pix > 212.5 && pix <= 225) {
@@ -68,15 +69,15 @@ function draw() {
     } else if (pix > 250 && pix <= 255) {
       image(nofill,x,y,10,10); 
     } else if (pix > 255 && pix <= 275 ) {
-      image(nofill,x,y,10,10); 
+      image(nofillTwo,x,y,10,10); 
     } else if (pix > 275 && pix <= 287.5) {
       image(nofill,x,y,10,10);
     } else if (pix > 287.5 && pix <= 300) {
-      image(nofill,x,y,10,10);
+      image(nofillTwo,x,y,10,10);
     } else if (pix > 300 && pix <= 312.5) {
       image(nofill,x,y,10,10);
     } else if (pix > 312.5 && pix <= 325) {
-      image(nofill,x,y,10,10);
+      image(nofillTwo,x,y,10,10);
     }
     x = x + diameter - 1;
   }
