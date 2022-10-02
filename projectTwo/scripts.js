@@ -13,6 +13,8 @@ function setup() {
 }
 
 function draw() {
+  image(chinaFlag,mouseX,mouseY,10,10);
+  console.log(mouseX);
   image(usMap,0,0,usMap.width,usMap.height);
   usMap.loadPixels();
   let diameter = 10;
@@ -25,8 +27,7 @@ function draw() {
     let g = usMap.pixels [index + 1];
     let b = usMap.pixels [index + 2];
 
-    image(chinaFlag,mouseX,mouseY,10,10);
-    console.log(mouseX);
+
 
     let pix = ((0.08 * r) + (0.54* g) + (0.11 * b));
 
