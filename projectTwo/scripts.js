@@ -82,6 +82,7 @@ function draw() {
     x = x + diameter - 1;
     }
     y = y + diameter - 1;
+    updatePixels();
   }
 
   let closeup = usMap.get(mouseX,mouseY);
