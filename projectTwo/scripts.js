@@ -21,9 +21,9 @@ function draw() {
   for (let y = 0; y < height; y++) {
    for (let x = 0; x < width; x++) {
     let index = (x + y * width) * 4;
-    let r = usMap.pixels [index + 0];
-    let g = usMap.pixels [index + 1];
-    let b = usMap.pixels [index + 2];
+    let r = usMap.pixels[index + 0];
+    let g = usMap.pixels[index + 1];
+    let b = usMap.pixels[index + 2];
 
 
 
