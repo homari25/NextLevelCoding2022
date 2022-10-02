@@ -57,13 +57,17 @@ function draw() {
       image(usFlag,x,y,10,10); 
     } else if (pix > 175 && pix <=187.5) {
       image(usFlag,x,y,10,10); 
-    } else if (pix > 187.5 && pix <200) {
+    } else if (pix > 200 && pix <= 212.5) {
       image(chinaFlag,x,y,10,10); 
-    } else if (pix > 187.5 && pix <200) {
+    } else if (pix > 212.5 && pix <= 225) {
       image(chinaFlag,x,y,10,10); 
-    } else if (pix > 187.5 && pix <200) {
+    } else if (pix > 225 && pix <= 237.5) {
       image(chinaFlag,x,y,10,10); 
-    }
+    } else if (pix > 237.5 && pix <=255) {
+      image(chinaFlag,x,y,10,10); 
+    } else if (pix > 255) {
+      image(chinaFlag,x,y,10,10); 
+    } 
     x = x + diameter - 1;
   }
     y = y + diameter - 1;
