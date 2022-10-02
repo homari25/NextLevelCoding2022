@@ -10,6 +10,7 @@ function preload(){
 function setup() {
   createCanvas(2048, 2048);
 //  noLoop();
+console.log(mouseX,mouseY);
 }
 
 function draw() {
@@ -88,5 +89,5 @@ function draw() {
 
 function mouseOver(){
   // image(chinaFlag,mouseX,mouseY,10,10);
-  console.log(mouseX, mouseY);
+  // console.log(mouseX, mouseY);
 }
