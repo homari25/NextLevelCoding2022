@@ -1,9 +1,10 @@
-let usMap,chinaFlag,usFlag;
+let usMap,chinaFlag,usFlag,nofill;
 
 function preload(){
   usMap = loadImage("map.png");
   chinaFlag = loadImage("china.png");
   usFlag = loadImage("us.png");
+  nofill = loadImage("nofill.png")
 }
 
 function setup() {
@@ -27,11 +28,11 @@ function draw() {
     let pix = ((0.3 * r) + (0.59* g) + (0.11 * b));
 
     if (pix <= 12.5 && x < usMap.width && y < usMap.height) {
-      noFill();
+      image(nofill,x,y,10,10); 
     } else if (pix > 12.5&& pix <= 25) {
-      noFill();
+      image(nofill,x,y,10,10); 
     } else if (pix > 25.0  && pix < 37.5) {
-      noFill();
+      image(nofill,x,y,10,10); 
     } else if (pix > 37.5 && pix <= 50 ) {
       image(chinaFlag,x,y,10,10); 
     } else if (pix > 50 && pix <= 62.5 ) {
