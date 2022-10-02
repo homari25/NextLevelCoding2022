@@ -79,14 +79,11 @@ function draw() {
       image(nofill,x,y,10,10);
     }
     x = x + diameter - 1;
-  }
-    y = y + diameter - 1;
-  }
-}
-
-function mouseOver() {
     if (mouseX >= usMap.width) {
       image(chinaFlag,x,y,10,10);
       console.log(mouseX);
     }
+  }
+    y = y + diameter - 1;
+  }
 }
