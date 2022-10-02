@@ -10,7 +10,6 @@ function preload(){
 function setup() {
   createCanvas(2048, 2048);
 //  noLoop();
-console.log(mouseX,mouseY)
 }
 
 function draw() {
@@ -18,6 +17,7 @@ function draw() {
   usMap.loadPixels();
   let diameter = 10;
   pixelDensity(1);
+  console.log(mouseX,mouseY);
 
   for (let y = 0; y < height; y++) {
    for (let x = 0; x < width; x++) {
