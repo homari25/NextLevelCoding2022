@@ -18,7 +18,7 @@ function draw() {
   image(usMap,0,0,2400,1514);
   let diameter = 10;
   pixelDensity(1);
-  
+
   for (let y = 0; y < height; y++) {
    for (let x = 0; x < width; x++) {
     let index = (x + y * width) * 4;
@@ -28,7 +28,7 @@ function draw() {
 
     let pix = ((0.08 * r) + (0.54* g) + (0.11 * b));
 
-    if (pix <= 12.5 && x < usMap.width && y < usMap.height) {
+    if (pix <= 12.5) {
       image(nofill,x,y,10,10); 
     } else if (pix > 12.5&& pix <= 25) {
       image(nofillTwo,x,y,10,10); 
