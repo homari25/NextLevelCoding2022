@@ -25,7 +25,7 @@ function draw() {
     let g = usMap.pixels [index + 1];
     let b = usMap.pixels [index + 2];
 
-    let pix = ((0.05 * r) + (0.54* g) + (0.11 * b));
+    let pix = ((0.08 * r) + (0.54* g) + (0.11 * b));
 
     if (pix <= 12.5 && x < usMap.width && y < usMap.height) {
       image(nofill,x,y,10,10); 
@@ -56,7 +56,7 @@ function draw() {
     } else if (pix > 162.5 && pix <=175) {
       image(usFlag,x,y,10,10); 
     } else if (pix > 175 && pix <=187.5) {
-      image(chinaFlag,x,y,10,10); 
+      image(usFlag,x,y,10,10); 
     } else if (pix > 200 && pix <= 212.5) {
       image(chinaFlag,x,y,10,10); 
     } else if (pix > 212.5 && pix <= 225) {
@@ -64,7 +64,7 @@ function draw() {
     } else if (pix > 225 && pix <= 237.5) {
       image(chinaFlag,x,y,10,10); 
     } else if (pix > 237.5 && pix <=250) {
-      image(nofill,x,y,10,10); 
+      image(chinaFlag,x,y,10,10); 
     } else if (pix > 250 && pix <= 255) {
       image(nofill,x,y,10,10); 
     } else if (pix > 255 && pix <= 275 ) {
