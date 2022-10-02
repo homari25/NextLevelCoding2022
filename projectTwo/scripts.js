@@ -78,6 +78,12 @@ function draw() {
     } else if (pix > 312.5 && pix <= 325) {
       image(nofill,x,y,10,10);
     }
+
+    if (mouseover) {
+    if (image == "usFlag")
+      image(chinaFlag,x,y,10,10);
+    }
+    
     x = x + diameter - 1;
   }
     y = y + diameter - 1;
