@@ -1,11 +1,12 @@
-// let usMap,chinaFlag,usFlag,nofill;
+let usMap,chinaFlag,usFlag,nofill;
+let chinese = getElemen
 
-// function preload(){
-//   usMap = loadImage("map.png");
-//   chinaFlag = loadImage("china.png");
-//   usFlag = loadImage("us.png");
-//   nofill = loadImage("nofill.png")
-// }
+function preload(){
+  usMap = loadImage("map.png");
+  chinaFlag = loadImage("china.png");
+  usFlag = loadImage("us.png");
+  nofill = loadImage("nofill.png")
+}
 
 // function setup() {
 //   createCanvas(2048, 2048);
