@@ -7,7 +7,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(1980, 1980);
+  createCanvas(1200, 1200);
   noLoop();
 }
 
@@ -63,8 +63,8 @@ function draw() {
     } else if (pix > 187.5 && pix <200) {
       image(usFlag,x,y,10,10); 
     }
-    x = x + diameter - 0.5;
+    x = x + diameter - 1;
   }
-    y = y + diameter - 0.5;
+    y = y + diameter - 1;
   }
 }
