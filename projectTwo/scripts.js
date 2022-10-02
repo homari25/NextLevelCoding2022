@@ -51,7 +51,7 @@ function draw() {
       image(usFlag,x,y,10,10); 
     } else if (pix > 137.5 && pix <=150) {
       image(usFlag,x,y,10,10); 
-    } else if (pix2048nofi > 150 && pix <=162.5) {
+    } else if (pix > 150 && pix <=162.5) {
       image(usFlag,x,y,10,10); 
     } else if (pix > 162.5 && pix <=175) {
       image(usFlag,x,y,10,10); 
