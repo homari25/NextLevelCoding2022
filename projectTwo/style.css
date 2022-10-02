@@ -1,9 +1,18 @@
 .container {
     position:relative;
-    width:80%;
+    width:50%;
     height:100%;
-    float:center;
+}
 
+.column .side {
+    float:left;
+    display:block;
+    width:25%
+}
+
+.column .rightside {
+    float:left;
+    width:25%
 }
 
 h1{
