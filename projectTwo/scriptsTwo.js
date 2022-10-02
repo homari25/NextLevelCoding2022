@@ -1,15 +1,14 @@
-let usMap,chinaFlag,usFlag,nofill;
+//let usMap,chinaFlag,usFlag,nofill;
 let chinese = document.getElementById("chineseflags");
 
-function preload(){
-  usMap = loadImage("map.png");
-  chinaFlag = loadImage("china.png");
-  usFlag = loadImage("us.png");
-  nofill = loadImage("nofill.png")
-}
 
-  chinaFlag.style.top = 10 + 'px';
-  chinaFlag.style.width = 10 + 'px';
+let usMap = loadImage("map.png");
+let chinaFlag = loadImage("china.png");
+let usFlag = loadImage("us.png");
+let nofill = loadImage("nofill.png")
+
+chinaFlag.style.top = 10 + 'px';
+chinaFlag.style.width = 10 + 'px';
 
 
 //   for(let i = 0;i <= 50;i++) {
