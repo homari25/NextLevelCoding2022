@@ -34,7 +34,7 @@ function draw() {
     } else if (pix > 25.0  && pix < 37.5) {
       image(nofill,x,y,10,10); 
     } else if (pix > 37.5 && pix <= 50 ) {
-      image(chinaFlag,x,y,10,10); 
+      image(nofill,x,y,10,10); 
     } else if (pix > 50 && pix <= 62.5 ) {
       image(chinaFlag,x,y,10,10); 
     } else if (pix > 62.5 && pix <= 75) {
@@ -63,10 +63,10 @@ function draw() {
       image(chinaFlag,x,y,10,10); 
     } else if (pix > 225 && pix <= 237.5) {
       image(chinaFlag,x,y,10,10); 
-    } else if (pix > 237.5 && pix <=255) {
+    } else if (pix > 237.5 && pix <=250) {
       image(chinaFlag,x,y,10,10); 
-    } else if (pix > 255) {
-      image(chinaFlag,x,y,10,10); 
+    } else if (pix > 250 && pix <= 262.5 ) {
+      image(nofill,x,y,10,10); 
     } 
     x = x + diameter - 1;
   }
