@@ -56,7 +56,7 @@ function draw() {
     } else if (pix > 162.5 && pix <=175) {
       image(usFlag,x,y,10,10); 
     } else if (pix > 175 && pix <=187.5) {
-      image(nofill,x,y,10,10); 
+      image(chinaFlag,x,y,10,10); 
     } else if (pix > 200 && pix <= 212.5) {
       image(chinaFlag,x,y,10,10); 
     } else if (pix > 212.5 && pix <= 225) {
