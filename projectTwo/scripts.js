@@ -26,18 +26,18 @@ function draw() {
     let g = usMap.pixels[index + 1];
     let b = usMap.pixels[index + 2];
 
-    let randomValue = random(200,255);
+
 
     let pix = ((0.08 * r) + (0.54* g) + (0.11 * b));
 
       if (pix <= 12.5) {
-        fill(randomValue);
+        image(nofill,x,y,10,10); 
       } else if (pix > 12.5&& pix <= 25) {
-        fill(randomValue);
+        image(nofill,x,y,10,10); 
       } else if (pix > 25.0  && pix < 37.5) {
-        fill(randomValue);
+        image(nofill,x,y,10,10); 
       } else if (pix > 37.5 && pix <= 50 ) {
-        fill(randomValue);
+        image(nofill,x,y,10,10); 
       } else if (pix > 50 && pix <= 62.5 ) {
         image(chinaFlag,x,y,10,10); 
       } else if (pix > 62.5 && pix <= 75) {
@@ -59,7 +59,7 @@ function draw() {
       } else if (pix > 162.5 && pix <=175) {
         image(usFlag,x,y,10,10); 
       } else if (pix > 175 && pix <=187.5) {
-        fill(randomValue);
+        image(nofill,x,y,10,10); 
       } else if (pix > 200 && pix <= 212.5) {
         image(chinaFlag,x,y,10,10); 
       } else if (pix > 212.5 && pix <= 225) {
@@ -69,17 +69,17 @@ function draw() {
       } else if (pix > 237.5 && pix <=250) {
         image(chinaFlag,x,y,10,10); 
       } else if (pix > 250 && pix <= 255) {
-        fill(randomValue);
+        image(nofill,x,y,10,10); 
       } else if (pix > 255 && pix <= 275 ) {
-        fill(randomValue);
+        image(nofill,x,y,10,10); 
       } else if (pix > 275 && pix <= 287.5) {
-        fill(randomValue);
+        image(nofill,x,y,10,10);
       } else if (pix > 287.5 && pix <= 300) {
-        fill(randomValue);
+        image(nofill,x,y,10,10);
       } else if (pix > 300 && pix <= 312.5) {
-        fill(randomValue);
+        image(nofill,x,y,10,10);
       } else if (pix > 312.5 && pix <= 325) {
-        fill(randomValue);
+        image(nofill,x,y,10,10);
       }
     x = x + diameter - 1;
     }
@@ -89,5 +89,5 @@ function draw() {
 
 function mouseOver(){
   // image(chinaFlag,mouseX,mouseY,10,10);
-  // console.log(mouseX, mouseY);
+  console.log(mouseX, mouseY);
 }
