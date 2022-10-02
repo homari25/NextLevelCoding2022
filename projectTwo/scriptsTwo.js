@@ -19,7 +19,7 @@ function draw() {
  // image(capture,0,0,capture.width,capture.height);
   capture.loadPixels();
   let diameter = 10;
-  pixelDensity(1);
+  //pixelDensity(1);
 
   for (let y = 0; y < height; y++) {
    for (let x = 0; x < width; x++) {
