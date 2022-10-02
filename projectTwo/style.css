@@ -1,3 +1,9 @@
+.container {
+    postiion:relative;
+    width:80%;
+    height:100%;
+}
+
 h1{
     font-family:'Neue Haas Grotesk Bold',sans-serif;
     font-size:24px;
