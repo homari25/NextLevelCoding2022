@@ -87,5 +87,6 @@ function draw() {
 function mouseOver() {
     if (mouseX >= usMap.width) {
       image(chinaFlag,x,y,10,10);
+      console.log(mouseX);
     }
 }
