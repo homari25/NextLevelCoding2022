@@ -9,7 +9,7 @@ function preload(){
 
 function setup() {
   createCanvas(1200, 1200);
-  noLoop();
+ // noLoop();
 }
 
 function draw() {
