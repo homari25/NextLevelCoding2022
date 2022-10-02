@@ -14,8 +14,8 @@ function setup() {
 }
 
 function draw() {
-  usMap.loadPixels();
   image(usMap,0,0,usMap.width * 2,usMap.height * 2);
+  usMap.loadPixels();
   let diameter = 10;
   pixelDensity(1);
 
