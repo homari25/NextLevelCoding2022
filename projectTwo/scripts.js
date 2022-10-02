@@ -71,6 +71,8 @@ function draw() {
       image(nofill,x,y,10,10); 
     } else if (pix > 275 && pix <= 287.5) {
       image(nofill,x,y,10,10);
+    } else if (pix > 287.5 && pix <= 300) {
+      image(chinaFlag,x,y,10,10);
     }
     x = x + diameter - 1;
   }
