@@ -9,12 +9,12 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(1980, 1980);
+  createCanvas(2048, 2048);
   noLoop();
 }
 
 function draw() {
-  image(usMap,0,0,usMap.width * 2,usMap.height * 2);
+  image(usMap,0,0,usMap.width,usMap.height);
   usMap.loadPixels();
   let diameter = 10;
   pixelDensity(1);
