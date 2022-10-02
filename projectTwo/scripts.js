@@ -25,7 +25,7 @@ function draw() {
     let g = usMap.pixels [index + 1];
     let b = usMap.pixels [index + 2];
 
-    let pix = ((0.1 * r) + (0.54* g) + (0.11 * b));
+    let pix = ((0.05 * r) + (0.54* g) + (0.11 * b));
 
     if (pix <= 12.5 && x < usMap.width && y < usMap.height) {
       image(nofill,x,y,10,10); 
