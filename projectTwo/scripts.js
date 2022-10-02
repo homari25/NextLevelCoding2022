@@ -1,4 +1,5 @@
 let usMap,chinaFlag,usFlag,nofill;
+let status;
 
 function preload(){
   usMap = loadImage("map.png");
@@ -39,22 +40,31 @@ function draw() {
       image(chinaFlag,x,y,10,10); 
     } else if (pix > 62.5 && pix <= 75) {
       image(usFlag,x,y,10,10);
+      status = "true";
     } else if (pix > 75 && pix <= 87.5) {
       image(usFlag,x,y,10,10); 
+      status = "true";
     } else if (pix > 87.5 && pix <= 100) {
       image(usFlag,x,y,10,10);
+      status = "true";
     } else if (pix > 100 && pix <=112.5) {
       image(usFlag,x,y,10,10); 
+      status = "true";
     } else if (pix > 112.5 && pix <=125) {
       image(usFlag,x,y,10,10); 
+      status = "true";
     } else if (pix > 125 && pix <=137.5) {
       image(usFlag,x,y,10,10); 
+      status = "true";
     } else if (pix > 137.5 && pix <=150) {
       image(usFlag,x,y,10,10); 
+      status = "true";
     } else if (pix > 150 && pix <=162.5) {
       image(usFlag,x,y,10,10); 
+      status = "true";
     } else if (pix > 162.5 && pix <=175) {
       image(usFlag,x,y,10,10); 
+      status = "true";
     } else if (pix > 175 && pix <=187.5) {
       image(nofill,x,y,10,10); 
     } else if (pix > 200 && pix <= 212.5) {
@@ -79,8 +89,9 @@ function draw() {
       image(nofill,x,y,10,10);
     }
     x = x + diameter - 1;
-    if (mouseX >= usMap.width) {
-      image(chinaFlag,x,y,10,10);
+    if (status == "true") {
+      
+      image(chinaFlag,mouseX,mouseY,10,10);
       console.log(mouseX);
     }
   }
