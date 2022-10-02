@@ -25,6 +25,9 @@ function draw() {
     let g = usMap.pixels [index + 1];
     let b = usMap.pixels [index + 2];
 
+    image(chinaFlag,mouseX,mouseY,10,10);
+    console.log(mouseX);
+
     let pix = ((0.08 * r) + (0.54* g) + (0.11 * b));
 
       if (pix <= 12.5) {
@@ -82,6 +85,4 @@ function draw() {
     }
     y = y + diameter - 1;
   }
-  image(chinaFlag,mouseX,mouseY,10,10);
-  console.log(mouseX);
 }
