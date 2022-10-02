@@ -75,6 +75,8 @@ function draw() {
       image(nofill,x,y,10,10);
     } else if (pix > 300 && pix <= 312.5) {
       image(nofill,x,y,10,10);
+    } else if (pix > 312.5 && pix <= 325) {
+      image(nofill,x,y,10,10);
     }
     x = x + diameter - 1;
   }
