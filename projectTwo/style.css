@@ -19,10 +19,10 @@
     left:80%;
 }
 
-.img{
-    width: 512px;
-    height:512px;
+.picture{
+    width: 50vw;
     height:auto;
+    position:absolute;
 }
 
 h1{
