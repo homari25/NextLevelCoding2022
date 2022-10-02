@@ -27,17 +27,17 @@ function draw() {
     let pix = ((0.3 * r) + (0.59* g) + (0.11 * b));
 
     if (pix <= 12.5 && x < usMap.width && y < usMap.height) {
-      image(usFlag,x,y,10,10);
+      noFill();
     } else if (pix > 12.5&& pix <= 25) {
-      image(usFlag,x,y,10,10);
+      noFill();
     } else if (pix > 25.0  && pix < 37.5) {
-      image(usFlag,x,y,10,10);
+      noFill();
     } else if (pix > 37.5 && pix <= 50 ) {
       image(chinaFlag,x,y,10,10); 
     } else if (pix > 50 && pix <= 62.5 ) {
       image(chinaFlag,x,y,10,10); 
     } else if (pix > 62.5 && pix <= 75) {
-      image(chinaFlag,x,y,10,10);
+      image(usFlag,x,y,10,10);
     } else if (pix > 75 && pix <= 87.5) {
       image(usFlag,x,y,10,10); 
     } else if (pix > 87.5 && pix <= 100) {
@@ -57,7 +57,7 @@ function draw() {
     } else if (pix > 175 && pix <=187.5) {
       image(usFlag,x,y,10,10); 
     } else if (pix > 187.5 && pix <200) {
-      image(usFlag,x,y,10,10); 
+      image(chinaFlag,x,y,10,10); 
     } else if (pix > 187.5 && pix <200) {
       image(chinaFlag,x,y,10,10); 
     } else if (pix > 187.5 && pix <200) {
