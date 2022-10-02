@@ -19,6 +19,11 @@
     left:80%;
 }
 
+.img{
+    width: 70%;
+    height:auto;
+}
+
 h1{
     font-family:'Neue Haas Grotesk Bold',sans-serif;
     font-size:30px;
