@@ -1,7 +1,7 @@
 let usMap,chinaFlag,usFlag,nofill;
 
 function preload(){
-  usMap = loadImage("worldmap.png");
+  usMap = loadImage("map.png");
   chinaFlag = loadImage("china.png");
   usFlag = loadImage("us.png");
   nofill = loadImage("nofill.png")
@@ -10,7 +10,7 @@ function preload(){
 function setup() {
   createCanvas(2048, 2048);
 //  noLoop();
-console.log(mouseX,mouseY);
+console.log(mouseX,mouseY)
 }
 
 function draw() {
