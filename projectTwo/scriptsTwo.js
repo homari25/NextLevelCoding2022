@@ -6,9 +6,9 @@ function preload(){
   function setup() {
     let cnv = createCanvas(windowWidth, windowHeight);
     // noLoop();
-    let canvasX = (windowWidth - width) / 2;
-    let canvasY = (windowHeight - height) / 2;
-    cnv.position(canvasX,canvasY);
+   // let canvasX = (windowWidth - width) / 2;
+   // let canvasY = (windowHeight - height) / 2;
+    cnv.position(0,0);
     background(255,255,255,0);
   }
   
