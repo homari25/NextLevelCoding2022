@@ -1,3 +1,7 @@
+body {
+    background-color: navy;
+}
+
 .container {
     position:relative;
     width:50%;
@@ -20,7 +24,7 @@
 }
 
 .picture{
-    width: 50%;
+    width: 100%;
     height:auto;
 }
 
