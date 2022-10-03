@@ -15,17 +15,18 @@ function preload(){
   function draw() {
   
     for (let y = 0; y < height; y+=10) {
-      for (let x = 1; x < 20; x++) {
+      for (let x = 1; x < 18; x++) {
      image(chinaFlag, x * 20 - 10,y,10,10); 
      image (usFlag, width - x * 20, y, 10, 10);
       }
     }
-    if(mousePressed) {
-    if (mouseX <= width/2) {
-    image(chinaFlag,mouseX,mouseY,10,10);
-    } else if (mouseX > width/2) {
-    image(usFlag,mouseX,mouseY,10,10);
-    }
-    }
     console.log(mouseX,mouseY);
-  }
+    }
+
+    function mousePressed () {
+        if (mouseX <= width/2) {
+        image(chinaFlag,mouseX,mouseY,10,10);
+        } else if (mouseX > width/2) {
+        image(usFlag,mouseX,mouseY,10,10);
+        }
+    }
