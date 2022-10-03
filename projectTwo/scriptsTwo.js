@@ -4,7 +4,7 @@ function preload(){
   }
   
   function setup() {
-    createCanvas(400, 400);
+  //  createCanvas(400, 400);
     // noLoop();
       background(255);
   }
