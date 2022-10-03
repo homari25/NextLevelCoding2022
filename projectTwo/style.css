@@ -1,5 +1,5 @@
 body {
-    background-color: navy;
+    background-color: rgb(1,22,38);
 }
 
 .container {
@@ -30,15 +30,20 @@ body {
 
 h1{
     font-family:'Neue Haas Grotesk Bold',sans-serif;
-    font-size:30px;
+    font-size:36px;
+    color:white;
+    line-height:1.2;
 }
 
 h2 {
     font-family:'Neue Haas Grotesk Thin', sans-serif;
     font-size:20px;
+    color:white;
 }
 
 p{
     font-family:'Neue Haas Grotesk Thin', sans-serif;
-    font-size:12px;
+    font-size:16px;
+    line-height:1.2;
+    color:white;
 }

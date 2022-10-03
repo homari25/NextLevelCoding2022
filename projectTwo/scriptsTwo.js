@@ -4,7 +4,7 @@ function preload(){
   }
   
   function setup() {
-    let cnv = createCanvas(windowWidth, windowHeight * 2);
+    let cnv = createCanvas(windowWidth, windowHeight * 3);
     // noLoop();
    // let canvasX = (windowWidth - width) / 2;
    // let canvasY = (windowHeight - height) / 2;
