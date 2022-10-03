@@ -11,10 +11,10 @@ function preload(){
   
   function draw() {
   
-    for (let y = 0; y < height; y+=10) {
+    for (let y = 0; y < windowHeight; y+=10) {
       for (let x = 1; x < 4; x++) {
      image(chinaFlag,x * 20 - 10,y,10,10); 
-     image (usFlag, width - x * 20, y, 10, 10);
+     image (usFlag, windowWidth - x * 20, y, 10, 10);
       }
     }
     if (mouseX <= width/2) {
