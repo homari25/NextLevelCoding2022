@@ -17,8 +17,20 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <canvas id="defaultCanvas0" class="p5Canvas" width="1438" height="1254" style="width: 719px; height: 627px;">
-        <div class = "column side"></div>
+       <div class = "column side">
+        <script>
+            function draw() {
+            for (let y = 0; y < windowHeight; y+=10) {
+                for (let x = 1; x < 4; x++) {
+                image(chinaFlag,x * 20 - 10,y,10,10); 
+                }
+            }
+            if (mouseX <= windowWidth/2) {
+                image(chinaFlag,mouseX,mouseY,10,10);
+            }
+            }
+        </script>
+       </div>
         <div class = "container">
         <h1>US Chip Curbs Will Highlight Cracks in China's AI Strategy</h1>
         <img class = "picture" src="image.png">
