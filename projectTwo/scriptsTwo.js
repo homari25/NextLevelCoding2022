@@ -24,9 +24,11 @@ function preload(){
     }
 
     function mouseDragged () {
+        let distance = dist(mouseX, mouseY, width/2, height/2)
+        let size = map(distance,0,1000, 10,30);
         if (mouseX <= width/2) {
-        image(chinaFlag,mouseX,mouseY,10,10);
+        image(chinaFlag,mouseX,mouseY,size,size);
         } else if (mouseX > width/2) {
-        image(usFlag,mouseX,mouseY,10,10);
+        image(usFlag,mouseX,mouseY,size,size);
         }
     }
