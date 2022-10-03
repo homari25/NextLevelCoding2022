@@ -25,7 +25,7 @@ function preload(){
 
     function mouseDragged () {
         let distance = dist(mouseX, mouseY, width/2, 0)
-        let size = map(distance,0,1000, 5,30);
+        let size = map(distance,0,1000, 5,20);
         if (mouseX <= width/2) {
         image(chinaFlag,mouseX,mouseY,size,size);
         } else if (mouseX > width/2) {
