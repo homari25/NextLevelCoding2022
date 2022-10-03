@@ -34,6 +34,17 @@ h1{
     left:0vw;
 }
 
+.projectOne {
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-color:transparent;
+    display:block;
+    line-height:0.9;
+    top:40vh;
+    left:0vw;
+}
+
 
 a{
     color: #00224E;
