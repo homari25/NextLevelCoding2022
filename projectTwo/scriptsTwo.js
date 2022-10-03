@@ -7,7 +7,7 @@ function preload(){
     let cnv = createCanvas(windowWidth, windowHeight);
     // noLoop();
     let canvasX = (windowWidth - width) / 2;
-    let canvasY = (windowHiehgt - height) / 2;
+    let canvasY = (windowHeight - height) / 2;
     cnv.position(canvasX,canvasY);
     background(255);
   }
