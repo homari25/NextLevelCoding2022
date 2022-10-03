@@ -20,7 +20,6 @@
         <div class = "column side">
         </div>
         <div class = "container">
-            <!-- <script src="scriptsTwo.js"></script> -->
         <h1>US Chip Curbs Will Highlight Cracks in China's AI Strategy</h1>
         <img class = "picture" src="image.png">
         <h2>ByTim Culpan
@@ -41,32 +40,6 @@
         <p>Chinese engineers and computer scientists will no doubt find innovative ways around these new restrictions, but the US is not sitting still either. By hindering its fiercest rival, Washington gives itself another chance to pull away in the global AI race.</p>
         </div>
         <div class = "column rightside"></div>
-        <script>
-            function preload(){
-                 chinaFlag = loadImage("china.png");
-                usFlag = loadImage("us.png");
-            }
-  
-//   function setup() {
-//     createCanvas(windowWidth, windowHeight);
-//     // noLoop();
-//       background(255);
-//   }
-  
-            function draw() {
-                for (let y = 0; y < height; y+=10) {
-                for (let x = 1; x < 4; x++) {
-                image(chinaFlag,x * 20 - 10,y,10,10); 
-                image (usFlag, width - x * 20, y, 10, 10);
-                }
-                }
-                if (mouseX <= width/2) {
-                image(chinaFlag,mouseX,mouseY,10,10);
-                } else if (mouseX > width/2) {
-                image(usFlag,mouseX,mouseY,10,10);
-                }
-                console.log(mouseX,mouseY);
-            }
-        </script>
+        <script src="scriptsTwo.js"></script>
    </body>
 </html>
