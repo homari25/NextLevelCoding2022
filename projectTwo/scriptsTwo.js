@@ -9,7 +9,7 @@ function preload(){
     let canvasX = (windowWidth - width) / 2;
     let canvasY = (windowHeight - height) / 2;
     cnv.position(canvasX,canvasY);
-    background(255);
+    background(255,255,255,0);
   }
   
   function draw() {
