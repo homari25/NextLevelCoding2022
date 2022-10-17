@@ -5,13 +5,15 @@ body{
 .container{
     /* display:flex; */
     width:calc(100% - 20px);
+    position:fixed;
+    top:100px;
     margin:20px;
 }
 
 h1{
     font-weight: bold;
     font-size: 20px;
-    line:0.3;
+    line-height:0.3;
     color: #020202;
     font-family:'IBMPlexSans-Regular', sans-serif;
 }
@@ -31,7 +33,8 @@ h1{
 }
 
 .project {
-    top:100px;
+    top:200px;
+    position:fixed;
     width:100%;
     height:100%;
     /* position:absolute; */
