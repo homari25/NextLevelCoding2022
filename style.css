@@ -1,12 +1,14 @@
-body {
+.container{
     background-color: #f5f5f5;
-    position:relative;
+    display:flex;
+    width:calc(100% - 20px);
 }
 
 h1{
     font-weight: bold;
+    font-size: 20px;
     color: #020202;
-    font-family:'Walbaum';
+    font-family:'IBMPlexSans-Regular', sans-serif;
 }
 
 .name{
@@ -17,7 +19,7 @@ h1{
 }
 
 .title{
-    font-size: 48px;
+    font-size: 20px;
     line-height: 0.3;
     top:50%;
     left:10vw;
