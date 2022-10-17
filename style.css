@@ -72,6 +72,7 @@ a{
     font-family:system-ui;
     font-weight:bold;
     display:block;
+    font-family:'IBMPlexSans-Regular', sans-serif;
 }
 
 p{
@@ -81,6 +82,7 @@ p{
     font-weight:bold;
     display:block;
     line-height: 0.01;
+    font-family:'IBMPlexSans-Regular', sans-serif;
 }
 
 
