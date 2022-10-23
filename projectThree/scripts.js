@@ -46,24 +46,16 @@ fetch(`https://sun-calculator.p.rapidapi.com/sunrise/?date=${date}&lat=${lat}&ln
    console.log(response.sunrise, response.sunset);
    let sunrise = response.sunrise;
    let sunset = response.sunset;
- 
-  let sunlength = (sunset - sunrise)/3600;
-  console.log(sunlength);
- 
+   let sunlength = (sunset - sunrise)/3600;
+   console.log(sunlength);
 
 // //I can't map.....
 // // let widthChange = map(sunlength,5,16,100,500); 
+  
   widthChange = sunlength * 10; 
-  if (sunlength < 11) {
-    heightChange = 10;
-  }  else if (sunlength < 13) {
-    heightChange = 30;
-  } else if (sunlength <15) {
-    heightChange = 60;
-  } else if (sunlength > 15) {
-    heightChange = 100;
-  }
-
+  heightChange = lat/4;
+  console.log(widthChange,heightChange)
+ 
   frame.style.width = widthChange + "px";
   frame.style.height = 84 + heightChange + "px";
   nal.style.left = 250 + widthChange + "px";
@@ -73,7 +65,6 @@ fetch(`https://sun-calculator.p.rapidapi.com/sunrise/?date=${date}&lat=${lat}&ln
 
 })
   .catch(err => console.error(err));
-
 })
 	.catch(err => console.error(err));
 }
