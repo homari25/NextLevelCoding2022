@@ -4,7 +4,7 @@
   
   .natgeo{
     position:absolute;
-    font-family:"geograph",sans-serif;
+    font-family:'geograph',sans-serif;
   /*   why is it italic for no reason?? */
     font-weight:bold;
     font-size:50px;
