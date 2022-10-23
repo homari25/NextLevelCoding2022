@@ -54,8 +54,9 @@ fetch(`https://sun-calculator.p.rapidapi.com/sunrise/?date=${date}&lat=${lat}&ln
 //sunlength = between 0 to 18hours  
   widthChange = sunlength * 10;
 //latitude = between -90 to 90 deg. 
-let heightChange = map(lat,-90,90,50,100);
-  // heightChange = lat/4;
+// let heightChange = map(lat,-90,90,50,100);
+
+ heightChange = lat/4;
   console.log(widthChange,heightChange)
  
   frame.style.width = widthChange + "px";
