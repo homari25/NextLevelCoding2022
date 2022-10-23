@@ -1,0 +1,49 @@
+.container{
+    position:relative;
+  }
+  
+  .natgeo{
+    position:absolute;
+    font-family:"geograph",sans-serif;
+  /*   why is it italic for no reason?? */
+    font-weight:bold;
+    font-size:50px;
+    font-style: normal;
+  }
+  
+  .nati {
+    top:100px;
+    left:100px;
+  }
+  
+  #nal{
+    top:100px;
+    left:270px;
+  }
+  
+  #ge {
+    top:160px;
+    left:150px;
+  }
+  
+  #graphic{
+    top:160px;
+    left:270px;
+  }
+  
+  #frame{
+  /* width:height is 2:3 */
+    width:16px;
+    height:84px;
+    position:absolute;
+    border-style:solid;
+    border-color:#ffd400;
+    border-width:8.3px;
+    top:calc(100px + 12px);
+    left:230px;
+  }
+  
+  /* #geoframe{
+    top:calc(160px + 12px);
+    left:230px;
+  } */
