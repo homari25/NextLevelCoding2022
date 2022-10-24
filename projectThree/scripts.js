@@ -54,7 +54,7 @@ function map(value, low1, high1, low2, high2) {
 }  
   
  let widthChange = map(sunlength,0,24,20,300); 
- let heightChange = map(lat,-90,90,20,300);
+ let heightChange = map(lat,90,-90,20,300);
  console.log(widthChange, heightChange + "please");
  
   frame.style.width = widthChange + "px";
