@@ -56,7 +56,7 @@ fetch(`https://sun-calculator.p.rapidapi.com/sunrise/?date=${date}&lat=${lat}&ln
 //latitude = between -90 to 90 deg. 
 // let heightChange = map(lat,-90,90,50,100);
 
- heightChange = lat/4;
+  heightChange = lat/4;
   console.log(widthChange,heightChange)
  
   frame.style.width = widthChange + "px";
