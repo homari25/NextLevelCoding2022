@@ -53,7 +53,7 @@ function map(value, low1, high1, low2, high2) {
     return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
 }  
   
- let widthChange = map(sunlength,4,24,20,400); 
+ let widthChange = map(sunlength,0,24,20,400); 
  let heightChange = map(lat,90,-90,20,300);
  console.log(widthChange, heightChange + "please");
  
