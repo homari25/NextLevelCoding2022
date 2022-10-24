@@ -49,15 +49,13 @@ fetch(`https://sun-calculator.p.rapidapi.com/sunrise/?date=${date}&lat=${lat}&ln
    let sunlength = (sunset - sunrise)/3600;
    console.log(sunlength);
 
-// //I can't map.....
-// // let widthChange = map(sunlength,5,16,100,500); 
-//sunlength = between 0 to 18hours  
-  widthChange = sunlength * 10;
-//latitude = between -90 to 90 deg. 
-// let heightChange = map(lat,-90,90,50,100);
-
-  heightChange = lat/4;
-  console.log(widthChange,heightChange)
+function map(value, low1, high1, low2, high2) {
+    return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+}  
+  
+ let widthChange = map(sunlength,0,24,20,300); 
+ let heightChange = map(lat,-90,90,20,300);
+ console.log(widthChange, heightChange + "please");
  
   frame.style.width = widthChange + "px";
   frame.style.height = 84 + heightChange + "px";
