@@ -11,6 +11,7 @@ let Input = document.getElementById("latitude");
 let longtitudeInput = document.getElementById("longtitude");
 let placeInput = document.getElementById("place");
 // let mysvg = document.getElementById("mysvg");
+let info = document.getElementById("info");
 
 function submit(){
 console.log(placeInput.value);
@@ -48,6 +49,7 @@ fetch(`https://sun-calculator.p.rapidapi.com/sunrise/?date=${date}&lat=${lat}&ln
    let sunset = response.sunset;
    let sunlength = (sunset - sunrise)/3600;
    console.log(sunlength + "hours");
+   info.innerHTML = "The length of daylight is" + sunlength + "hours"
 
 function map(value, low1, high1, low2, high2) {
     return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
