@@ -64,9 +64,9 @@
   position:absolute;
   font-family:"geograph",sans-serif;
 /*   why is it italic for no reason?? */
-  font-weight:lighter;
+  font-weight:thin;
   font-size:25px;
   font-style: normal;
-  top: 300px;
+  top: 500px;
   margin:10px;
 }
