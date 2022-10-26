@@ -11,7 +11,7 @@ let Input = document.getElementById("latitude");
 let longtitudeInput = document.getElementById("longtitude");
 let placeInput = document.getElementById("place");
 // let mysvg = document.getElementById("mysvg");
-let info = document.getElementById("info");
+let info = document.getElementById("information");
 
 function submit(){
 console.log(placeInput.value);
