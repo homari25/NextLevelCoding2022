@@ -59,3 +59,14 @@
   top:calc(100px + 12px);
   left:230px;
 }
+
+#information{
+  position:absolute;
+  font-family:"geograph",sans-serif;
+/*   why is it italic for no reason?? */
+  font-weight:normal;
+  font-size:25px;
+  font-style: normal;
+  top: 50%;
+  margin:10px;
+}
