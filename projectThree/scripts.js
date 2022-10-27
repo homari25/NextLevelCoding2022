@@ -49,7 +49,7 @@ fetch(`https://sun-calculator.p.rapidapi.com/sunrise/?date=${date}&lat=${lat}&ln
    let sunset = response.sunset;
    let sunlength = (sunset - sunrise)/3600;
    console.log(sunlength + "hours");
-   info.innerHTML = "The length of the daylight is " + Math.round(sunlength * 100) / 100 + "hours"
+   info.innerHTML = "The length of the daylight is " + Math.round(sunlength * 100) / 100 + " hours"
 
 function map(value, low1, high1, low2, high2) {
     return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
