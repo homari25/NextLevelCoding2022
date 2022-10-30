@@ -1,6 +1,7 @@
 let circle = document.getElementById("circle");
+let text = document.getElementById("text");
 
-circle.addEventListener("click",myFunction);
+text.addEventListener("click",myFunction);
 
 function myFunction () {
 let newCircle = document.createElement("div");
