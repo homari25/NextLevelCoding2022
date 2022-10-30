@@ -16,8 +16,8 @@ newPic.classList.add("newyorkPic");
 newPic.style.width = 50 + "px";
 newPic.style.position = "absolute";
 
-// newPic.style.top = Math.random() * 500 + "px";
-// newPic.style.left = Math.random() * 500 + "px";
+newPic.style.top = Math.random() * 500 + "px";
+newPic.style.left = Math.random() * 500 + "px";
   
 document.body.appendChild(newPic);
 console.log(i);
