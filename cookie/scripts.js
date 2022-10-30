@@ -17,11 +17,11 @@ newPic.classList.add("newyorkPic");
 newPic.style.width = 50 + "px";
 newPic.style.position = "absolute";
 
-newPic.onmousedown = function () {
+newPic.onmousedown = function (e) {
   isMouseDown = true;
 }
 
-newPic.onmouseUp = function() {
+newPic.onmouseUp = function(e) {
   isMouseDown = false;
 }
 
