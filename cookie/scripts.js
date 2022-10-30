@@ -18,6 +18,7 @@ newPic.classList.add("newyorkPic");
 
 newPic.style.top = Math.random() * window.innerHeight + "px";
 newPic.style.left = Math.random() * window.innerWidth + "px";
+newPic.draggable = "true";
 
 // newPic.onmouseDown = function(event) {
   newPic.style.position = "absolute";
