@@ -16,70 +16,9 @@ newPic.classList.add("newyorkPic");
 newPic.style.width = 50 + "px";
 newPic.style.position = "absolute";
 
-if (newPic.classList.contains("newyorkPic")) {
-let active = false;
-let currentX;
-let currentY;
-let initialX;
-let initialY;
-let xOffset = 0;
-let yOffset = 0;
-
-newyorkPic.addEventListener("touchstart", dragStart, false);
-newyorkPic.addEventListener("touchend", dragEnd, false);
-newyorkPic.addEventListener("touchmove", drag, false);
-
-newyorkPic.addEventListener("mousedown", dragStart, false);
-newyorkPic.addEventListener("mouseup", dragEnd, false);
-newyorkPic.addEventListener("mousemove", drag, false);
-
-function dragStart(e) {
-  if (e.type === "touchstart") {
-    initialX = e.touches[0].clientX - xOffset;
-    initialY = e.touches[0].clientY - yOffset;
-  } else {
-    initialX = e.clientX - xOffset;
-    initialY = e.clientY - yOffset;
-  }
-
-  if (e.target === dragItem) {
-    active = true;
-  }
-}
-
-function dragEnd(e) {
-  initialX = currentX;
-  initialY = currentY;
-
-  active = false;
-}
-
-function drag(e) {
-  if (active) {
-  
-    e.preventDefault();
-  
-    if (e.type === "touchmove") {
-      currentX = e.touches[0].clientX - initialX;
-      currentY = e.touches[0].clientY - initialY;
-    } else {
-      currentX = e.clientX - initialX;
-      currentY = e.clientY - initialY;
-    }
-
-    xOffset = currentX;
-    yOffset = currentY;
-
-    setTranslate(currentX, currentY, dragItem);
-  }
-}
-}
-
-
 // newPic.style.top = Math.random() * 500 + "px";
 // newPic.style.left = Math.random() * 500 + "px";
   
 document.body.appendChild(newPic);
 console.log(i);
-
 }
