@@ -1,6 +1,8 @@
 let circle = document.getElementById("circle");
 let text = document.getElementById("text");
 let myPics = ["/cookie/sozai/ny1.png","/cookie/sozai/ny2.png","/cookie/sozai/ny3.png","/cookie/sozai/ny4.png","/cookie/sozai/ny5.png","/cookie/sozai/ny6.png","/cookie/sozai/ny7.png","/cookie/sozai/ny8.png","/cookie/sozai/ny9.png","/cookie/sozai/ny10.png","/cookie/sozai/ny11.png"]
+myPics.style.width = 30 + "%";
+
 
 text.addEventListener("click",myFunction);
 
