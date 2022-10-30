@@ -7,14 +7,14 @@ text.addEventListener("click",myFunction);
 
 function myFunction () {
 let newPic = document.createElement("div");
-let i = 0;
-let isMouseDown = true;
+// let i = 0;
+// let isMouseDown = true;
 //how do I not repeat the same thing over again?
 newPic.innerHTML = "<img src='" + myPics[Math.floor(Math.random() * myPics.length)] + "'>";
 
 newPic.classList.add("newyorkPic");
 // how do I make it small?
-newPic.style.width = 50 + "px";
+// newPic.style.width = 50 + "px";
 newPic.style.top = Math.random() * window.innerHeight;
 newPic.style.left = Math.random() * window.innerWidth;
 
