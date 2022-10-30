@@ -8,7 +8,8 @@ function myFunction () {
 let newPic = document.createElement("div");
 newPic.innerHTML = "<img src='" + myPics[Math.floor(Math.random() * myPics.length)] + "'>";
 newPic.classList.add("newyorkPic");
-newPic.style.position = "absolute"
+newPic.style.width = 100 + "px";
+newPic.style.position = "absolute";
 newPic.style.top = Math.random() * 500 + "px";
 newPic.style.left = Math.random() * 500 + "px";
   
