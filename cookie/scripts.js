@@ -8,9 +8,7 @@ text.addEventListener("click",myFunction);
 function myFunction () {
 let newPic = document.createElement("div");
 let i = 0;
-if ( i < myPics.length) {
-  newPic.innerHTML = "<img src='" + myPics[i] + "'>";
-}
+newPic.innerHTML = "<img src='" + myPics[i] + "'>";
 
 newPic.classList.add("newyorkPic");
 newPic.style.width = 50 + "px";
