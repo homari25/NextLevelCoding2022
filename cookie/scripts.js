@@ -23,6 +23,7 @@ newPic.innerHTML = "<img src='" + myPics[Math.floor(Math.random() * myPics.lengt
 
 newPic.classList.add("newyorkPic");
 // how do I make it small?
+newPic.draggable = true;
 
 newPic.style.top = Math.random() * window.innerHeight + "px";
 newPic.style.left = Math.random() * window.innerWidth + "px";
@@ -31,5 +32,20 @@ newPic.style.zIndex = 1;
   
 document.body.appendChild(newPic);
 
+for (let piece of newPic) {
+  let randomX = Math.floor(Math.random() * 800).toString();
+  let randomY = Math.floor(Math.random() * 800).toString();
+
+  newPic.style.left = randomX + "px";
+  newPic.style.top = randomY + "px";
+
+  document.documentElement.style.setProperty("--posx", randomX + "px");
+  document.documentElement.style.setProperty("--posy", randomY + "px");
 }
+
+console.log(randomPos(randomX, randomY));
+console.log(newPic);
+};
+
+
 
