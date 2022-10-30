@@ -15,33 +15,34 @@ newPic.innerHTML = "<img src='" + myPics[Math.floor(Math.random() * myPics.lengt
 newPic.classList.add("newyorkPic");
 // how do I make it small?
 newPic.style.width = 50 + "px";
+newPic.style.top = Math.random() * window.innerHeight;
+newPic.style.left = Math.random() * window.innerWidth;
 
-newPic.onmouseDown = function(event) {
-  newPic.style.position = "absolute";
-  document.body.append(newPic);
-  console.log(newPic.style.left, newPic.style.top);
-;
-  function moveAt(pageX, pageY) {
-    newPic.style.left = pageX - ball.offsetWidth / 2 + "px";
-    newPic.style.top = pageY - ball.offsetHeight / 2 + "px";
-  }
+// newPic.onmouseDown = function(event) {
+//   newPic.style.position = "absolute";
+//   document.body.append(newPic);
+// ;
+//   function moveAt(pageX, pageY) {
+//     newPic.style.left = pageX - ball.offsetWidth / 2 + "px";
+//     newPic.style.top = pageY - ball.offsetHeight / 2 + "px";
+//   }
 
-  moveAt(event.pageX, event.pageY);
+//   moveAt(event.pageX, event.pageY);
 
-  function onMouseMove(event) {
-    moveAt(event.pageX, event.pageY);
-  }
+//   function onMouseMove(event) {
+//     moveAt(event.pageX, event.pageY);
+//   }
 
-  document.addEventListener('mousemove', onMouseMove);
-  newPic.onmouseup = function () {
-    document.removeEvenetListener('mousemove', onMouseMove);
-    newPic.onmouseup = null;
-  };
+//   document.addEventListener('mousemove', onMouseMove);
+//   newPic.onmouseup = function () {
+//     document.removeEvenetListener('mousemove', onMouseMove);
+//     newPic.onmouseup = null;
+//   };
 
-  newPic.ondragstart = function() {
-    return false;
-  }
-}
+//   newPic.ondragstart = function() {
+//     return false;
+//   }
+// }
 
 newPic.style.zIndex = 1;
   
