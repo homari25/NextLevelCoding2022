@@ -7,7 +7,9 @@ text.addEventListener("click",myFunction);
 
 function myFunction () {
 let newPic = document.createElement("div");
-newPic.innerHTML = "<img src='" + myPics[Math.floor(Math.random() * myPics.length)] + "'>";
+for (let i = 0; i < myPics.length; i++) {
+newPic.innerHTML = "<img src='" + myPics[i] + "'>";
+}
 newPic.classList.add("newyorkPic");
 newPic.style.width = 50 + "px";
 // how do I make it small?
