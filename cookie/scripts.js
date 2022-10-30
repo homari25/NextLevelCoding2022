@@ -1,20 +1,17 @@
 let circle = document.getElementById("circle");
 let text = document.getElementById("text");
+let myPics = ['ny1.png']
 
 text.addEventListener("click",myFunction);
 
 function myFunction () {
-let newCircle = document.createElement("div");
-
-newCircle.style.width = 100 + "px";
-newCircle.style.height = 100 + "px";
-newCircle.classList.add("newCircles");
-newCircle.style.position = "absolute"
-newCircle.style.backgroundColor = "blue";
-newCircle.style.borderRadius = 50 + "%";
-newCircle.style.top = Math.random() * 500 + "px";
-newCircle.style.left = Math.random() * 500 + "px";
+let newPic = document.createElement("div");
+newPic.innerHTML = "<img src='" + myPics[Math.floor(Math.random() * myPics.length)] + "'>";
+newPic.classList.add("newyorkPic");
+newPic.style.position = "absolute"
+newPic.style.top = Math.random() * 500 + "px";
+newPic.style.left = Math.random() * 500 + "px";
   
-document.body.appendChild(newCircle);
-console.log(newCircle);
+document.body.appendChild(newPic);
+console.log(newPic);
 }
