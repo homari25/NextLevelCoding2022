@@ -28,7 +28,6 @@ newPic.style.position = "absolute";
 newPic.style.zIndex = 1;
   
 document.body.appendChild(newPic);
-}
 
 container.addEventListener("touchstart", dragStart, false);
 container.addEventListener("touchend", dragEnd, false);
@@ -82,3 +81,7 @@ function drag(e) {
 function setTranslate(xPos, yPos, el) {
   el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
 }
+
+
+}
+
