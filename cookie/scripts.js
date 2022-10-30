@@ -30,6 +30,8 @@ newPic.onmouseUp = function(e) {
 }
 
 if (isMouseDown == true) {
+  let mouseX = e.clientX;
+  let mouseY = e.clientY;
   newPic.style.top = e.clientX;
   newPic.style.left = e.clientY;
   console.log(e.clientX, e.clientY);
