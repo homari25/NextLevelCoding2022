@@ -1,6 +1,6 @@
 let circle = document.getElementById("circle");
 let text = document.getElementById("text");
-let myPics = ['/sozai/ny1.png']
+let myPics = ["ny1.png"]
 
 text.addEventListener("click",myFunction);
 
