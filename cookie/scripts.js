@@ -16,7 +16,7 @@ newPic.classList.add("newyorkPic");
 newPic.style.width = 50 + "px";
 newPic.style.position = "absolute";
 
-let newyorkPic = document.getElementsByClassName("newyorkPic");
+if (newPic.classList.contains("newyorkPic")) {
 let active = false;
 let currentX;
 let currentY;
@@ -72,6 +72,7 @@ function drag(e) {
 
     setTranslate(currentX, currentY, dragItem);
   }
+}
 }
 
 
