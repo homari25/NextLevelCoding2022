@@ -46,7 +46,7 @@ function dragStart(e) {
     initialY = e.clientY - yOffset;
   }
 
-  if (e.target === newPic) {
+  if (e.target === newyorkPic) {
     active = true;
   }
 }
