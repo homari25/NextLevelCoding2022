@@ -11,7 +11,6 @@ let i = 0;
 if ( i < myPics.length) {
   newPic.innerHTML = "<img src='" + myPics[i] + "'>";
 }
-i++
 
 newPic.classList.add("newyorkPic");
 newPic.style.width = 50 + "px";
@@ -22,4 +21,6 @@ newPic.style.left = Math.random() * 500 + "px";
   
 document.body.appendChild(newPic);
 console.log(newPic);
+i++
+
 }
