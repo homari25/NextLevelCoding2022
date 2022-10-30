@@ -8,6 +8,7 @@ text.addEventListener("click",myFunction);
 function myFunction () {
 let newPic = document.createElement("div");
 let i = 0;
+let isMouseDown = true;
 //how do I not repeat the same thing over again?
 newPic.innerHTML = "<img src='" + myPics[Math.floor(Math.random() * myPics.length)] + "'>";
 
@@ -16,8 +17,21 @@ newPic.classList.add("newyorkPic");
 newPic.style.width = 50 + "px";
 newPic.style.position = "absolute";
 
-newPic.style.top = Math.random() * 500 + "px";
-newPic.style.left = Math.random() * 500 + "px";
+newPic.onmousedown = function () {
+  isMouseDown = true;
+}
+
+newPic.onmouseUp = function() {
+  isMouseDown = false;
+}
+
+if (isMouseDown == true) {
+  newPic.style.top = e.clientX;
+  newPic.style.left = e.clientY;
+}
+
+// newPic.style.top = Math.random() * 500 + "px";
+// newPic.style.left = Math.random() * 500 + "px";
 newPic.style.zIndex = 1;
   
 document.body.appendChild(newPic);
