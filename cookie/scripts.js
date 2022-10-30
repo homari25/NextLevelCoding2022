@@ -47,6 +47,7 @@ function elementDrag(e) {
   pos4 = e.clientY;
   elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
   elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  console.log(pos1,pos2);
 }
 
 function closeDragElement() {
@@ -59,6 +60,5 @@ function closeDragElement() {
   
 document.body.appendChild(newPic);
 console.log(i);
-i = i + 1;
 
 }
