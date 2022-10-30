@@ -21,13 +21,11 @@ newPic.onmousedown = function (e) {
   isMouseDown = true;
   let mouseX = e.clientX;
   let mouseY = e.clientY;
-}
+// }
 
-newPic.onmouseUp = function(e) {
-  isMouseDown = false;
-  let mouseX = e.clientX;
-  let mouseY = e.clientY;
-}
+// newPic.onmouseUp = function(e) {
+//   isMouseDown = false;
+// }
 
 if (isMouseDown == true) {
   let mouseX = e.clientX;
@@ -36,7 +34,7 @@ if (isMouseDown == true) {
   newPic.style.left = e.clientY;
   console.log(e.clientX, e.clientY);
 }
-
+}
 // newPic.style.top = Math.random() * 500 + "px";
 // newPic.style.left = Math.random() * 500 + "px";
 newPic.style.zIndex = 1;
