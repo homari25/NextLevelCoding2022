@@ -19,7 +19,7 @@ newPic.style.top = Math.random() * window.innerHeight;
 newPic.style.left = Math.random() * window.innerWidth;
 
 // newPic.onmouseDown = function(event) {
-//   newPic.style.position = "absolute";
+  newPic.style.position = "absolute";
 //   document.body.append(newPic);
 // ;
 //   function moveAt(pageX, pageY) {
