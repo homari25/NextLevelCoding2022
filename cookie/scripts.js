@@ -18,6 +18,7 @@ newPic.style.position = "absolute";
 
 newPic.style.top = Math.random() * 500 + "px";
 newPic.style.left = Math.random() * 500 + "px";
+newPic.style.zIndex = 1;
   
 document.body.appendChild(newPic);
 console.log(i);

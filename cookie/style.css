@@ -9,6 +9,7 @@ body{
     left:0vw;
     line-height:1.2;
     text-align:center;
+    z-index:2;
   }
   
   p{
@@ -19,6 +20,8 @@ body{
   /*   margin:10px; */
     line-height:1.2;
     text-align:center;
+    z-index:2;
+
   }
   
   
