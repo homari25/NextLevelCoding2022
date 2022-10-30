@@ -28,6 +28,7 @@ newPic.onmouseUp = function() {
 if (isMouseDown == true) {
   newPic.style.top = e.clientX;
   newPic.style.left = e.clientY;
+  console.log(e.clientX, e.clientY);
 }
 
 // newPic.style.top = Math.random() * 500 + "px";
@@ -35,5 +36,4 @@ if (isMouseDown == true) {
 newPic.style.zIndex = 1;
   
 document.body.appendChild(newPic);
-console.log(i);
 }
