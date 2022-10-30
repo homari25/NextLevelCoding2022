@@ -16,6 +16,7 @@ newPic.classList.add("newyorkPic");
 newPic.style.width = 50 + "px";
 newPic.style.position = "absolute";
 
+let newyorkPic = document.getElementsByClassName("newyorkPic");
 let active = false;
 let currentX;
 let currentY;
