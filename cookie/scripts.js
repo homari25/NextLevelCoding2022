@@ -20,8 +20,8 @@ dragElement(document.getElementsByClassName("newyorkPic"));
 
 function dragElement(elmnt) {
   let pos1, pos2, pos3, pos4 = 0;
-  if (document.getElementById(elmnt.id + "header")) {
-    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  if (document.getElementById(elmnt.classList + "header")) {
+    document.getElementById(elmnt.classList + "header").onmousedown = dragMouseDown;
   } else {
     elmnt.onmousedown = dragMouseDown;
   }  
