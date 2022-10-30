@@ -19,10 +19,14 @@ newPic.style.position = "absolute";
 
 newPic.onmousedown = function (e) {
   isMouseDown = true;
+  let mouseX = e.clientX;
+  let mouseY = e.clientY;
 }
 
 newPic.onmouseUp = function(e) {
   isMouseDown = false;
+  let mouseX = e.clientX;
+  let mouseY = e.clientY;
 }
 
 if (isMouseDown == true) {
