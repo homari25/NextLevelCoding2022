@@ -15,8 +15,9 @@ newPic.innerHTML = "<img src='" + myPics[Math.floor(Math.random() * myPics.lengt
 newPic.classList.add("newyorkPic");
 // how do I make it small?
 // newPic.style.width = 50 + "px";
-newPic.style.top = Math.random() * window.innerHeight;
-newPic.style.left = Math.random() * window.innerWidth;
+
+newPic.style.top = Math.random() * window.innerHeight + "px";
+newPic.style.left = Math.random() * window.innerWidth + "px";
 
 // newPic.onmouseDown = function(event) {
   newPic.style.position = "absolute";
