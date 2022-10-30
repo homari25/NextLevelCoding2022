@@ -15,10 +15,33 @@ newPic.innerHTML = "<img src='" + myPics[Math.floor(Math.random() * myPics.lengt
 newPic.classList.add("newyorkPic");
 // how do I make it small?
 newPic.style.width = 50 + "px";
-newPic.style.position = "absolute";
 
-newPic.style.top = mouseX;
-newPic.style.left = mouseY;
+newPic.onmouseDown = function(event) {
+  newPic.style.position = "absolute";
+  document.body.append(newPic);
+
+  function moveAt(pageX, pageY) {
+    newPic.style.left = pageX - ball.offsetWidth / 2 + "px";
+    newPic.style.top = pageY - ball.offsetHeight / 2 + "px";
+  }
+
+  moveAt(event.pageX, event.pageY);
+
+  function onMouseMove(event) {
+    moveAt(event.pageX, event.pageY);
+  }
+
+  document.addEventListener('mousemove', onMouseMove);
+  newPic.onmouseup = function () {
+    document.removeEvenetListener('mousemove', onMouseMove);
+    newPic.onmouseup = null;
+  };
+
+  newPic.ondragstart = function() {
+    return false;
+  }
+}
+
 newPic.style.zIndex = 1;
   
 document.body.appendChild(newPic);
