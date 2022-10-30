@@ -3,7 +3,7 @@ body{
   }
   
   h1{
-    font-style:"helvetica", sans-serif;
+    font-family:'IBMPlexSans-Regular', sans-serif;
     position:absolute;
     top:50vh;
     left:0vw;
@@ -12,7 +12,7 @@ body{
   }
   
   p{
-    font-style: sans-serif;
+    font-family: 'IBMPlexSans-Regular', sans-serif;
     position:absolute;
     top:60vh;
     left:0vw;
