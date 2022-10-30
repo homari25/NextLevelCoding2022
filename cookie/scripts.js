@@ -23,6 +23,6 @@ draggable.style.position = "absolute";
 draggable.style.zIndex = 1;
   
 // document.body.appendChild(newPic);
-console.log(newPic);
+console.log(draggable);
 }
 
