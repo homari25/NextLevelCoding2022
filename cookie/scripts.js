@@ -10,6 +10,7 @@ let newPic = document.createElement("div");
 let i = 0;
 if ( i < myPics.length) {
   newPic.innerHTML = "<img src='" + myPics[i] + "'>";
+  i = i + 1;
 }
 
 newPic.classList.add("newyorkPic");
@@ -20,7 +21,6 @@ newPic.style.top = Math.random() * 500 + "px";
 newPic.style.left = Math.random() * 500 + "px";
   
 document.body.appendChild(newPic);
-console.log(newPic);
-i++
+console.log(i);
 
 }
