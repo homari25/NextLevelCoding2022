@@ -19,7 +19,8 @@ newPic.style.width = 50 + "px";
 newPic.onmouseDown = function(event) {
   newPic.style.position = "absolute";
   document.body.append(newPic);
-
+  console.log(newPic.style.left, newPic.style.top);
+;
   function moveAt(pageX, pageY) {
     newPic.style.left = pageX - ball.offsetWidth / 2 + "px";
     newPic.style.top = pageY - ball.offsetHeight / 2 + "px";
