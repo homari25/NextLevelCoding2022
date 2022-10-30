@@ -17,7 +17,7 @@ newPic.classList.add("newyorkPic");
 newPic.style.width = 50 + "px";
 newPic.style.position = "absolute";
 
-newPic.dragthePic() = function() {
+newPic.dragthePic = function() {
 newPic.onmousedown = function (e) {
   isMouseDown = true;
   let mouseX = e.clientX;
