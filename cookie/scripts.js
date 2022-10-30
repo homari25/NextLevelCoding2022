@@ -4,7 +4,7 @@ let myPics = ["/cookie/sozai/ny1.png","/cookie/sozai/ny2.png","/cookie/sozai/ny3
 "/cookie/sozai/ny11.png","/cookie/sozai/ny12.png","/cookie/sozai/ny13.png","/cookie/sozai/ny14.png","/cookie/sozai/ny15.png","/cookie/sozai/ny16.png","/cookie/sozai/ny17.png","/cookie/sozai/ny18.png","/cookie/sozai/ny19.png","/cookie/sozai/ny20.png",
 "/cookie/sozai/ny21.png","/cookie/sozai/ny22.png","/cookie/sozai/ny23.png"]
 let container = document.querySelector("#container");
-let draggable = document.querySelectorAll("draggable");
+let draggable = document.getElementById("draggable");
 
 
 text.addEventListener("click",myFunction);
@@ -23,6 +23,6 @@ draggable.style.position = "absolute";
 draggable.style.zIndex = 1;
   
 // document.body.appendChild(newPic);
-console.log(draggable);
+console.log(newPic);
 }
 
