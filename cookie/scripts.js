@@ -4,25 +4,32 @@ let myPics = ["/cookie/sozai/ny1.png","/cookie/sozai/ny2.png","/cookie/sozai/ny3
 "/cookie/sozai/ny11.png","/cookie/sozai/ny12.png","/cookie/sozai/ny13.png","/cookie/sozai/ny14.png","/cookie/sozai/ny15.png","/cookie/sozai/ny16.png","/cookie/sozai/ny17.png","/cookie/sozai/ny18.png","/cookie/sozai/ny19.png","/cookie/sozai/ny20.png",
 "/cookie/sozai/ny21.png","/cookie/sozai/ny22.png","/cookie/sozai/ny23.png"]
 let container = document.querySelector("#container");
-let draggable = document.getElementById("draggable");
+
+var active = false;
+var currentX;
+var currentY;
+var initialX;
+var initialY;
+var xOffset = 0;
+var yOffset = 0;
 
 
 text.addEventListener("click",myFunction);
 
 function myFunction () {
-// let newPic = document.createElement("div");
-// //how do I not repeat the same thing over again?
-draggable.innerHTML = "<src='" + myPics[Math.floor(Math.random() * myPics.length)] + "'>";
+let newPic = document.createElement("div");
+//how do I not repeat the same thing over again?
+newPic.innerHTML = "<img src='" + myPics[Math.floor(Math.random() * myPics.length)] + "'>";
 
-// newPic.classList.add("newyorkPic");
+newPic.classList.add("newyorkPic");
 // how do I make it small?
 
-draggable.style.top = Math.random() * window.innerHeight + "px";
-draggable.style.left = Math.random() * window.innerWidth + "px";
-draggable.style.position = "absolute";
-draggable.style.zIndex = 1;
+newPic.style.top = Math.random() * window.innerHeight + "px";
+newPic.style.left = Math.random() * window.innerWidth + "px";
+newPic.style.position = "absolute";
+newPic.style.zIndex = 1;
   
-// document.body.appendChild(newPic);
-console.log(draggable);
+document.body.appendChild(newPic);
+
 }
 
