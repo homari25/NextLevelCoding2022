@@ -32,19 +32,21 @@ newPic.style.zIndex = 1;
   
 document.body.appendChild(newPic);
 
-for (let piece of newPic) {
-  let randomX = Math.floor(Math.random() * 800).toString();
-  let randomY = Math.floor(Math.random() * 800).toString();
+//I can't drag...
 
-  newPic.style.left = randomX + "px";
-  newPic.style.top = randomY + "px";
+// for (let piece of newPic) {
+//   let randomX = Math.floor(Math.random() * 800).toString();
+//   let randomY = Math.floor(Math.random() * 800).toString();
 
-  document.documentElement.style.setProperty("--posx", randomX + "px");
-  document.documentElement.style.setProperty("--posy", randomY + "px");
-}
+//   newPic.style.left = randomX + "px";
+//   newPic.style.top = randomY + "px";
 
-console.log(randomPos(randomX, randomY));
-console.log(newPic);
+//   document.documentElement.style.setProperty("--posx", randomX + "px");
+//   document.documentElement.style.setProperty("--posy", randomY + "px");
+// }
+
+// console.log(randomPos(randomX, randomY));
+// console.log(newPic);
 };
 
 
