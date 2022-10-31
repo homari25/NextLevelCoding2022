@@ -21,15 +21,15 @@ text.addEventListener("click",function() {
 let newPic = document.createElement("div");
 //how do I not repeat the same thing over again?
 newPic.innerHTML = "<img src='" + myPics[Math.floor(Math.random() * myPics.length)] + "'>";
-let positionPic = getCookie("newPic_position") || Math.random() * window.innerWidth;
+let positionPic = getCookie("newPic_position") || 0;
 newPic.classList.add("newyorkPic");
 // how do I make it small?
 newPic.draggable = true;
 
 
 
-newPic.style.top = positionPic + "px";
-newPic.style.left = positionPic+ "px";
+newPic.style.top = Math.random() * window.innerHeight + "px";
+newPic.style.left = Math.random() * window.innerWidth + "px";
 newPic.style.position = "absolute";
 newPic.style.zIndex = 1;
   
@@ -37,7 +37,7 @@ document.body.appendChild(newPic);
 
 setCookie("newPic_position", positionPic, 999);
 
-//I can't drag... Is it because I'm appendChild-ing?
+//I can't drag...is it because I'm appendChilding?
 
 // for (let piece of newPic) {
 //   let randomX = Math.floor(Math.random() * 800).toString();
