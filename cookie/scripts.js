@@ -18,10 +18,7 @@ var yOffset = 0;
 
 let positionPic = getCookie("newPic_position") || 0;
 
-text.addEventListener("click",myFunction);
-
-function myFunction () {
-
+text.addEventListener("click",function() {
 let newPic = document.createElement("div");
 //how do I not repeat the same thing over again?
 newPic.innerHTML = "<img src='" + myPics[Math.floor(Math.random() * myPics.length)] + "'>";
@@ -54,7 +51,7 @@ setCookie("newPic_position", positionPic, 999);
 
 // console.log(randomPos(randomX, randomY));
 // console.log(newPic);
-};
+});
 
 const deleteAllCookies = () => {
     const cookies = document.cookie.split(";");
