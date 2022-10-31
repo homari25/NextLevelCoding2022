@@ -20,7 +20,9 @@ var yOffset = 0;
 text.addEventListener("click",function() {
 let newPic = document.createElement("div");
 //how do I not repeat the same thing over again?
-newPic.innerHTML = "<img src='" + myPics[Math.floor(Math.random() * myPics.length)] + "'>";
+let randomPic = Math.floor(Math.random() * myPics.length);
+newPic.innerHTML = "<img src='" + myPics[randomPic] + "'>";
+//how do I save the position of each piece into a cookie?
 let positionPic = getCookie("newPic_position") || 0;
 newPic.classList.add("newyorkPic");
 // how do I make it small?
