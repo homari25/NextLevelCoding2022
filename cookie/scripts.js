@@ -4,7 +4,11 @@ let myPics = ["/cookie/sozai/ny1.png","/cookie/sozai/ny2.png","/cookie/sozai/ny3
 "/cookie/sozai/ny11.png","/cookie/sozai/ny12.png","/cookie/sozai/ny13.png","/cookie/sozai/ny14.png","/cookie/sozai/ny15.png","/cookie/sozai/ny16.png","/cookie/sozai/ny17.png","/cookie/sozai/ny18.png","/cookie/sozai/ny19.png","/cookie/sozai/ny20.png",
 "/cookie/sozai/ny21.png","/cookie/sozai/ny22.png","/cookie/sozai/ny23.png"]
 let container = document.querySelector("#container");
-
+//create empty array >> save elements
+//array of objects -> for each of objects, save cookie index of. xposition, yposition.
+//loop through the 
+// test if can save just by randomly clicking and saving the places of these things.
+//append the element to the same array as well. 
 console.log(document.cookie);
 
 
