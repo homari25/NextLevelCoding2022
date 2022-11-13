@@ -1,7 +1,10 @@
+//counter
 let count = 6;
 let refresh = 6;
 let countSlider = document.getElementById("countSlider");
 let refreshSlider = document.getElementById("refreshSlider");
+
+//background
 let xspacing = 1; // Distance between each horizontal location
 let w; // Width of entire wave
 let theta = 0.0; // Start angle at 0
@@ -9,6 +12,10 @@ let amplitude = 70.0; // Height of wave
 let period = 500.0; // How many pixels before the wave repeats
 let dx; // Value for incrementing x
 let yvalues; // Using an array to store height values for the wave
+
+//color
+let c1 = "rgb(255,125,0)";
+let c2 = "rgb(0,125,125)"
 
 function setup() {
   createCanvas(400, 400);
@@ -21,7 +28,7 @@ function setup() {
 }
 
 function draw() {
-  background(200);
+  background(c2);
   count = countSlider.value;
   refresh = refreshSlider.value;
   calcWave();
@@ -31,7 +38,7 @@ function draw() {
   for (let i = count; i > 0; i--) {
   push();
   translate(70,180);
-  rotate(TWO_PI/count/2 * i);  
+  rotate(TWO_PI/count/2 * i);
   drawFlower();
   pop();
 
@@ -66,7 +73,7 @@ function draw() {
   pop();
   }
   
-  console.log(refresh);
+  console.log(c1);
 }
 
 function calcWave() {
@@ -95,10 +102,10 @@ function renderWave() {
 
 function drawFlower(){
   noStroke();
-  // fill(0,255,0,50);
-  // ellipse(0,0,90,90);
   fill(0);
   rect(0,0,5,100,10);
+  fill(0,255,0,20);
+  ellipse(0,0,90,90,20);
 }
 
 function drawFlowerTwo(){
