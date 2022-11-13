@@ -51,6 +51,9 @@ function draw() {
   calcWave();
   renderWave();
   
+  fill(255);
+  ellipse(100,80,90,90);
+
   for (let i = count; i > 0; i--) {
   push();
   translate(100,180);
@@ -117,8 +120,6 @@ function renderWave() {
 }
 
 function drawFlower(){
-  fill(255);
-  ellipse(0,0,90,90);
   noStroke();
   fill(c1);
   rect(0,0,2,100);
