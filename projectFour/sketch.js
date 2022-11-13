@@ -57,7 +57,7 @@ function draw() {
   translate(100,180);
   rotate(TWO_PI/count * i);
   drawFlower();
-  fill(255,255,255,20);
+  fill(255,255,255);
   ellipse(0,0,60,60);
   pop();
 
