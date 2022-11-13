@@ -147,20 +147,3 @@ function drawFlowerSix(){
   fill(0,255,0,70);
   ellipse(0,0,90,90);
 }
-
-function findColors(){
-  document.getElementById("colorsSelect").classList.toggle("show");
-}
-
-window.onclick = function(event) {
-  if (!event.target.matches('.findc')) {
-    var dropdowns = document.getElementsByClassName("colorsOptions");
-    var k;
-    for (k = 0; k < dropdowns.length; k++) {
-      var openDropdown = dropdowns[k];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
