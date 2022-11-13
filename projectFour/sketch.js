@@ -122,17 +122,17 @@ function drawFlower(){
 
 function drawFlowerTwo(){
   noStroke();
-  fill(0,255,0,50);
-  ellipse(0,0,190,190);
+  // fill(0,255,0,50);
+  // ellipse(0,0,190,190);
   fill(c1);
   rect(0,0,5,200,10);
 }
 
 function drawFlowerThree(){
   noStroke();
-  fill(0);
-  rect(0,0,5,100,10);
-  fill(0,255,0,70);
+  // fill(0);
+  // rect(0,0,5,100,10);
+  fill(c1);
   ellipse(0,0,90,90);
 }
 
