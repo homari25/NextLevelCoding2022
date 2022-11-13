@@ -49,7 +49,7 @@ function draw() {
   
   for (let i = count; i > 0; i--) {
   push();
-  translate(50,180);
+  translate(100,180);
   rotate(TWO_PI/count/2 * i);
   drawFlower();
   pop();
@@ -61,25 +61,25 @@ function draw() {
   pop();
     
   push();
-  translate(300,120);
+  translate(300,180);
   rotate(TWO_PI/count/2 * i);   
   drawFlowerThree();
   pop();
   
   push();
-  translate(240,300);
+  translate(120,300);
   rotate(TWO_PI/count/2 * i);   
   drawFlowerFour();
   pop();
 
   push();
-  translate(200,300);
+  translate(200,240);
   rotate(TWO_PI/count/2 * i);   
   drawFlowerFour();
   pop();
   
   push();
-  translate(300,400);
+  translate(280,400);
   rotate(TWO_PI/count/2 * i);   
   drawFlowerFour();
   pop();
