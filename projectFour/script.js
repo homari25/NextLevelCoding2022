@@ -3,7 +3,8 @@ let tabName = 'Sheet1'
 
 let opensheet_url = `https://opensheet.elk.sh/${sheetID}/${tabName}`
 
-let lushname = ["Outback Mate","Karma","","",""]
+let dataArr = [];
+let lushname = ["Outback Mate","Karma","Sleepy","Honey I washed the kids","Christmas Cranberry","Bohemian","Sandstone","Sea Vegetable","Baked Alaska","Snow Fairy","Lemon Zest","Golden Pear","Ro's Argan","Olive Tree","Goddess",""]
 
 console.log(opensheet_url);
 fetch(opensheet_url)
@@ -13,11 +14,18 @@ fetch(opensheet_url)
     .then(function (data) {
         for (let datapoint of data) {
         let sweetness = parseFloat(datapoint.Sweetness);
-        count = map(sweetness,1,10,10,40);
+        let item = parseFloat(datapoint.Item);
+
+        dataArr.push([item])
+        for (let itemNum = 0; itemNum < lushname.length; itemNum++) {
+            if(item[itemNum] == lushName[itemNum]) {
+        count = map(sweetness[itemNum],1,10,10,40);
+        console.log(count, sweetness[itemNum], lushName[itemNum]);
 				//do something with the data here
-        console.log(count, datapoint.Sweetness, datapoint.Item);
-        }
-    })
+                }
+            }
+            }
+        })
     .catch(function (err) {
         console.log("Something went wrong!", err);
     });
