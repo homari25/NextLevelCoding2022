@@ -56,6 +56,8 @@ function draw() {
   translate(100,180);
   rotate(TWO_PI/count/2 * i);
   drawFlower();
+  fill(c1);
+  ellipse(0,0,90,90);
   pop();
 
   push();
@@ -120,8 +122,6 @@ function drawFlower(){
   noStroke();
   fill(c1);
   rect(0,0,3,100,10);
-  // fill(c1);
-  // ellipse(0,0,90,90);
 }
 
 function drawFlowerTwo(){
