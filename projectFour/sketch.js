@@ -149,7 +149,7 @@ function drawFlowerSix(){
 }
 
 function findColors(){
-  document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementById("colorsSelect").classList.toggle("show");
 }
 
 window.onclick = function(event) {
