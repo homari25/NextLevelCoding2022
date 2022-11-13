@@ -16,7 +16,7 @@ fetch(opensheet_url)
         let sweetness = parseFloat(datapoint.Sweetness);
         let items = parseFloat(datapoint.Item);
 
-        dataArr.push([item])
+        dataArr.push([items])
         for (let i = 0; i < lushname.length; i++) {
             // if(item[itemNum] == lushname[itemNum]) {
         count = map(sweetness,1,10,10,40);
