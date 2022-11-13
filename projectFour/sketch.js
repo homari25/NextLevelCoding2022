@@ -147,7 +147,7 @@ function drawFlowerFour(){
 function drawFlowerFive(){
   noStroke();
   fill(c1);
-  rect(0,0,3,100,10);
+  rect(0,0,3,200,10);
   // fill(0,255,0,70);
   // ellipse(0,0,90,90);
 }
