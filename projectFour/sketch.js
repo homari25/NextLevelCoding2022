@@ -16,6 +16,9 @@ let yvalues; // Using an array to store height values for the wave
 //color
 let c1 = "rgb(255,125,0)";
 let c2 = "rgb(0,125,125)"
+let changerElem = document.getElementById("changer");
+changerElem = c2.value;
+
 
 function setup() {
   createCanvas(400, 400);
