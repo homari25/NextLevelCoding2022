@@ -10,8 +10,12 @@ fetch(opensheet_url)
         return response.json();
     })
     .then(function (data) {
-        console.log(data);
+        for (let datapoint of data) {
+        let sweetness = parseFloat(datapoint.Sweetness);
+        count = map(sweetness,1,10,10,40);
 				//do something with the data here
+        console.log(count);
+        }
     })
     .catch(function (err) {
         console.log("Something went wrong!", err);
