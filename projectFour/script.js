@@ -14,7 +14,7 @@ fetch(opensheet_url)
         let sweetness = parseFloat(datapoint.Sweetness);
         count = map(sweetness,1,10,10,40);
 				//do something with the data here
-        console.log(count);
+        console.log(count, datapoint.Sweetness);
         }
     })
     .catch(function (err) {
