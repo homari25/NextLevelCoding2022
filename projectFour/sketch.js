@@ -121,7 +121,7 @@ function renderWave() {
 function drawFlower(){
   noStroke();
   fill(c1);
-  rect(0,0,3,100,10);
+  rect(0,0,2,100);
 }
 
 function drawFlowerTwo(){
@@ -129,13 +129,13 @@ function drawFlowerTwo(){
   // fill(0,255,0,50);
   // ellipse(0,0,190,190);
   fill(c1);
-  rect(0,0,3,150,10);
+  rect(0,0,2,150);
 }
 
 function drawFlowerThree(){
   noStroke();
   fill(c1);
-  rect(0,0,3,100,10);
+  rect(0,0,2,100);
   // fill(c1);
   // ellipse(0,0,90,90);
 }
@@ -143,7 +143,7 @@ function drawFlowerThree(){
 function drawFlowerFour(){
   noStroke();
   fill(c1);
-  rect(0,0,3,100,10);
+  rect(0,0,2,100);
 //   fill(0,255,0,70);
 //   ellipse(0,0,90,90);
 }
@@ -151,7 +151,7 @@ function drawFlowerFour(){
 function drawFlowerFive(){
   noStroke();
   fill(c1);
-  rect(0,0,3,200,10);
+  rect(0,0,2,200);
   // fill(0,255,0,70);
   // ellipse(0,0,90,90);
 }
@@ -159,7 +159,7 @@ function drawFlowerFive(){
 function drawFlowerSix(){
   noStroke();
   fill(c1);
-  rect(0,0,3,100,10);
+  rect(0,0,2,100);
   // fill(0,255,0,70);
   // ellipse(0,0,90,90);
 }
