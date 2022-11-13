@@ -19,8 +19,8 @@ fetch(opensheet_url)
         dataArr.push([item])
         for (let i = 0; i < lushname.length; i++) {
             // if(item[itemNum] == lushname[itemNum]) {
-        count = map(sweetness[i],1,10,10,40);
-        console.log(count, i, sweetness[i], lushname[i]);
+        count = map(sweetness,1,10,10,40);
+        console.log(count[i], i, sweetness[i], lushname[i]);
 				//do something with the data here
                 // }
             }
