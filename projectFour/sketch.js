@@ -30,12 +30,12 @@ function setup() {
   yvalues = new Array(floor(w / xspacing));
 }
 
-changerElem.oninput = function() {
-  c2 = changerElem.value;
-}
-
 flowerChanger.oninput = function() {
   c1 = flowerChanger.value;
+}
+
+changerElem.oninput = function() {
+  c2 = changerElem.value;
 }
 
 
@@ -116,6 +116,7 @@ function drawFlower(){
   noStroke();
   fill(0);
   rect(0,0,5,100,10);
+  c1.setAlpha(200);
   fill(c1);
   ellipse(0,0,90,90,20);
 }
