@@ -17,10 +17,10 @@ fetch(opensheet_url)
         let item = parseFloat(datapoint.Item);
 
         dataArr.push([item])
-        for (let itemNum = 0; itemNum < lushname.length; itemNum++) {
+        for (let i = 0; i < lushname.length; i++) {
             // if(item[itemNum] == lushname[itemNum]) {
-        count = map(sweetness[itemNum],1,10,10,40);
-        console.log(count, sweetness[itemNum], lushname[itemNum]);
+        count = map(sweetness[i],1,10,10,40);
+        console.log(count, i, sweetness[i], lushname[i]);
 				//do something with the data here
                 // }
             }
