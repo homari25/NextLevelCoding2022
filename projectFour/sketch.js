@@ -32,6 +32,7 @@ function setup() {
 
 flowerChanger.oninput = function() {
   c1 = flowerChanger.value;
+  c1.setAlpha(125);
 }
 
 changerElem.oninput = function() {
@@ -45,7 +46,6 @@ function draw() {
   refresh = refreshSlider.value;
   calcWave();
   renderWave();
-  // renderWaveTwo();
   
   for (let i = count; i > 0; i--) {
   push();
@@ -116,9 +116,8 @@ function drawFlower(){
   noStroke();
   fill(0);
   rect(0,0,5,100,10);
-  c1.setAlpha(200);
   fill(c1);
-  ellipse(0,0,90,90,20);
+  ellipse(0,0,90,90);
 }
 
 function drawFlowerTwo(){
