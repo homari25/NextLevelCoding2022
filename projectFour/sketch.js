@@ -19,6 +19,10 @@ let c2 = "rgb(0,125,125)"
 let changerElem = document.getElementById("backgroundChanger");
 let flowerChanger = document.getElementById("flowerChanger");
 
+//flower
+let randomX = random(100,400);
+let randomY = random(100,400);
+
 
 function setup() {
   createCanvas(400, 400);
@@ -49,37 +53,43 @@ function draw() {
   
   for (let i = count; i > 0; i--) {
   push();
-  translate(100,180);
+  // translate(100,180);
+  translate(randomX,randomY);
   rotate(TWO_PI/count/2 * i);
   drawFlower();
   pop();
 
   push();
-  translate(200,60);
+  // translate(200,60);
+  translate(randomX,randomY);
   rotate(TWO_PI/count/2 * i);   
   drawFlowerTwo();
   pop();
     
   push();
-  translate(300,180);
+  // translate(300,180);
+  translate(randomX,randomY);
   rotate(TWO_PI/count/2 * i);   
   drawFlowerThree();
   pop();
   
   push();
-  translate(120,300);
+  // translate(120,300);
+  translate(randomX,randomY);
   rotate(TWO_PI/count/2 * i);   
   drawFlowerFour();
   pop();
 
   push();
-  translate(200,240);
+  // translate(200,240);
+  translate(randomX,randomY);
   rotate(TWO_PI/count/2 * i);   
   drawFlowerFour();
   pop();
   
   push();
-  translate(280,400);
+  // translate(280,400);
+  translate(randomX,randomY);
   rotate(TWO_PI/count/2 * i);   
   drawFlowerFour();
   pop();
