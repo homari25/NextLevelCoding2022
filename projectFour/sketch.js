@@ -54,10 +54,10 @@ function draw() {
   for (let i = count; i > 0; i--) {
   push();
   translate(100,180);
+  fill(255);
+  ellipse(0,0,90,90);
   rotate(TWO_PI/count/2 * i);
   drawFlower();
-  fill(255);
-  ellipse(0,0,90,50);
   pop();
 
   push();
