@@ -89,7 +89,7 @@ function draw() {
   pop();
   }
   
-  console.log(c1);
+  // console.log(c1);
 }
 
 function calcWave() {
