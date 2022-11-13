@@ -61,7 +61,7 @@ function draw() {
   pop();
     
   push();
-  translate(100,300);
+  translate(300,200);
   rotate(TWO_PI/count/2 * i);   
   drawFlowerThree();
   pop();
@@ -73,13 +73,13 @@ function draw() {
   pop();
 
   push();
-  translate(100,300);
+  translate(200,300);
   rotate(TWO_PI/count/2 * i);   
   drawFlowerFour();
   pop();
   
   push();
-  translate(100,300);
+  translate(300,400);
   rotate(TWO_PI/count/2 * i);   
   drawFlowerFour();
   pop();
@@ -115,7 +115,7 @@ function renderWave() {
 function drawFlower(){
   noStroke();
   fill(c1);
-  rect(0,0,5,100,10);
+  rect(0,0,3,100,10);
   // fill(c1);
   // ellipse(0,0,90,90);
 }
@@ -125,38 +125,38 @@ function drawFlowerTwo(){
   // fill(0,255,0,50);
   // ellipse(0,0,190,190);
   fill(c1);
-  rect(0,0,5,200,10);
+  rect(0,0,3,200,10);
 }
 
 function drawFlowerThree(){
   noStroke();
-  // fill(0);
-  // rect(0,0,5,100,10);
   fill(c1);
-  ellipse(0,0,90,90);
+  rect(0,0,5,100,10);
+  // fill(c1);
+  // ellipse(0,0,90,90);
 }
 
 function drawFlowerFour(){
   noStroke();
-  fill(0);
+  fill(c1);
   rect(0,0,5,100,10);
-  fill(0,255,0,70);
-  ellipse(0,0,90,90);
+//   fill(0,255,0,70);
+//   ellipse(0,0,90,90);
 }
 
 function drawFlowerFive(){
   noStroke();
-  fill(0);
+  fill(c1);
   rect(0,0,5,100,10);
-  fill(0,255,0,70);
-  ellipse(0,0,90,90);
+  // fill(0,255,0,70);
+  // ellipse(0,0,90,90);
 }
 
 function drawFlowerSix(){
   noStroke();
-  fill(0);
+  fill(c1);
   rect(0,0,5,100,10);
-  fill(0,255,0,70);
-  ellipse(0,0,90,90);
+  // fill(0,255,0,70);
+  // ellipse(0,0,90,90);
 }
 
