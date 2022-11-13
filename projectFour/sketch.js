@@ -124,7 +124,7 @@ function drawFlowerTwo(){
   noStroke();
   fill(0,255,0,50);
   ellipse(0,0,190,190);
-  fill(0);
+  fill(c1);
   rect(0,0,5,200,10);
 }
 
