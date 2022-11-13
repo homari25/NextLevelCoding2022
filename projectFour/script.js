@@ -3,6 +3,7 @@ let tabName = 'Sheet1'
 
 let opensheet_url = `https://opensheet.elk.sh/${sheetID}/${tabName}`
 
+let lushname = ["Outback Mate","Karma","","",""]
 
 console.log(opensheet_url);
 fetch(opensheet_url)
@@ -14,7 +15,7 @@ fetch(opensheet_url)
         let sweetness = parseFloat(datapoint.Sweetness);
         count = map(sweetness,1,10,10,40);
 				//do something with the data here
-        console.log(count, datapoint.Sweetness);
+        console.log(count, datapoint.Sweetness, datapoint.Item);
         }
     })
     .catch(function (err) {
