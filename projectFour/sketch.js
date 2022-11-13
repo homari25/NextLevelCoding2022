@@ -114,10 +114,10 @@ function renderWave() {
 
 function drawFlower(){
   noStroke();
-  fill(0);
-  rect(0,0,5,100,10);
   fill(c1);
-  ellipse(0,0,90,90);
+  rect(0,0,5,100,10);
+  // fill(c1);
+  // ellipse(0,0,90,90);
 }
 
 function drawFlowerTwo(){
