@@ -57,38 +57,48 @@ function draw() {
   translate(100,180);
   rotate(TWO_PI/count * i);
   drawFlower();
-  fill(255,255,255);
+  fill(c1);
   ellipse(0,0,60,60);
   pop();
 
   push();
   translate(200,60);
-  rotate(TWO_PI/count/2 * i);   
+  rotate(TWO_PI/count * i);   
   drawFlowerTwo();
+  fill(c1);
+  ellipse(0,0,60,60);
   pop();
     
   push();
   translate(300,180);
-  rotate(TWO_PI/count/2 * i);   
+  rotate(TWO_PI/count * i);   
   drawFlowerThree();
+  fill(c1);
+  ellipse(0,0,60,60);
   pop();
   
   push();
   translate(120,300);
-  rotate(TWO_PI/count/2 * i);   
+  rotate(TWO_PI/count * i);   
   drawFlowerFour();
+  fill(c1);
+  ellipse(0,0,60,60);
   pop();
 
   push();
   translate(200,240);
-  rotate(TWO_PI/count/2 * i);   
-  drawFlowerFour();
+  rotate(TWO_PI/count * i);   
+  drawFlowerFive();
+  fill(c1);
+  ellipse(0,0,60,60);
   pop();
   
   push();
   translate(280,400);
-  rotate(TWO_PI/count/2 * i);   
-  drawFlowerFour();
+  rotate(TWO_PI/count * i);   
+  drawFlowerSix();
+  fill(c1);
+  ellipse(0,0,60,60);
   pop();
   }
   
@@ -121,7 +131,7 @@ function renderWave() {
 
 function drawFlower(){
   noStroke();
-  fill(c1);
+  fill(255);
   rect(0,0,2,100);
 }
 
@@ -129,13 +139,13 @@ function drawFlowerTwo(){
   noStroke();
   // fill(0,255,0,50);
   // ellipse(0,0,190,190);
-  fill(c1);
+  fill(255);
   rect(0,0,2,150);
 }
 
 function drawFlowerThree(){
   noStroke();
-  fill(c1);
+  fill(255);
   rect(0,0,2,100);
   // fill(c1);
   // ellipse(0,0,90,90);
@@ -143,7 +153,7 @@ function drawFlowerThree(){
 
 function drawFlowerFour(){
   noStroke();
-  fill(c1);
+  fill(255);
   rect(0,0,2,100);
 //   fill(0,255,0,70);
 //   ellipse(0,0,90,90);
@@ -151,7 +161,7 @@ function drawFlowerFour(){
 
 function drawFlowerFive(){
   noStroke();
-  fill(c1);
+  fill(255);
   rect(0,0,2,200);
   // fill(0,255,0,70);
   // ellipse(0,0,90,90);
@@ -159,7 +169,7 @@ function drawFlowerFive(){
 
 function drawFlowerSix(){
   noStroke();
-  fill(c1);
+  fill(255);
   rect(0,0,2,100);
   // fill(0,255,0,70);
   // ellipse(0,0,90,90);
