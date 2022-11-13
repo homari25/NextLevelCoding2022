@@ -17,7 +17,6 @@ let yvalues; // Using an array to store height values for the wave
 let c1 = "rgb(255,125,0)";
 let c2 = "rgb(0,125,125)"
 let changerElem = document.getElementById("changer");
-c2 = changerElem.value;
 
 
 function setup() {
@@ -29,6 +28,11 @@ function setup() {
   dx = (TWO_PI / period) * xspacing;
   yvalues = new Array(floor(w / xspacing));
 }
+
+changerElem.oninput = function() {
+  c2 = changerElem.value;
+}
+
 
 function draw() {
   background(c2);
@@ -150,3 +154,4 @@ function drawFlowerSix(){
   fill(0,255,0,70);
   ellipse(0,0,90,90);
 }
+
