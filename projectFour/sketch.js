@@ -117,11 +117,11 @@ function renderWave() {
 }
 
 function drawFlower(){
+  fill(255);
+  ellipse(0,0,90,90);
   noStroke();
   fill(c1);
   rect(0,0,2,100);
-  fill(255);
-  ellipse(0,0,90,90);
 }
 
 function drawFlowerTwo(){
