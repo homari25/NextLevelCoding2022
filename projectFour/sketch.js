@@ -51,12 +51,12 @@ function draw() {
   calcWave();
   renderWave();
   
-  fill(255);
-  ellipse(100,80,90,90);
 
   for (let i = count; i > 0; i--) {
   push();
   translate(100,180);
+  fill(255);
+  ellipse(0,0,90,90,20);
   rotate(TWO_PI/count/2 * i);
   drawFlower();
   pop();
