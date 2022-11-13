@@ -17,6 +17,7 @@ let yvalues; // Using an array to store height values for the wave
 let c1 = "rgb(255,125,0)";
 let c2 = "rgb(0,125,125)"
 let changerElem = document.getElementById("backgroundChanger");
+let flowerChanger = document.getElementById("flowerChanger");
 
 
 function setup() {
@@ -31,6 +32,10 @@ function setup() {
 
 changerElem.oninput = function() {
   c2 = changerElem.value;
+}
+
+flowerChanger.oninput = function() {
+  c1 = flowerChanger.value;
 }
 
 
@@ -111,7 +116,7 @@ function drawFlower(){
   noStroke();
   fill(0);
   rect(0,0,5,100,10);
-  fill(0,255,0,20);
+  fill(c1);
   ellipse(0,0,90,90,20);
 }
 
