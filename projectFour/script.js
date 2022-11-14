@@ -27,7 +27,8 @@ fetch(opensheet_url)
         for (let i = 0; i < lushname.length; i++) {
             // if(item[itemNum] == lushname[itemNum]) {
         if(soapNameInput.value == items) {
-        console.log(items,sweetness);
+        count = map(sweetness,1,10,10,60);
+        console.log(items,sweetness,count);
 				//do something with the data here
                 // }
             }
