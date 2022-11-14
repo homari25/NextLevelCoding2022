@@ -35,14 +35,14 @@ function setup() {
   yvalues = new Array(floor(w / xspacing));
 }
 
-flowerChanger.oninput = function() {
-  c1 = flowerChanger.value;
-  c1.setAlpha(125);
-}
+// flowerChanger.oninput = function() {
+//   c1 = flowerChanger.value;
+//   c1.setAlpha(125);
+// }
 
-changerElem.oninput = function() {
-  c2 = changerElem.value;
-}
+// changerElem.oninput = function() {
+//   c2 = changerElem.value;
+// }
 
 
 function draw() {
