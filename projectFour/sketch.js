@@ -14,8 +14,8 @@ let dx; // Value for incrementing x
 let yvalues; // Using an array to store height values for the wave
 // let offset = Math.random() / 100;
 //color
-let c1 = "rgb(255,125,0)";
-let c2 = "rgb(0,125,125)"
+let c1 = "rgb(255,125,0)"; //flower
+let c2 = "rgb(0,125,125)" //background
 let changerElem = document.getElementById("backgroundChanger");
 let flowerChanger = document.getElementById("flowerChanger");
 

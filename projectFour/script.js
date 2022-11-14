@@ -23,6 +23,7 @@ fetch(opensheet_url)
         let sweetness = parseFloat(datapoint.Sweetness);
         let items = datapoint.Item;
         let refreshyness = parseFloat(datapoint.Refreshness);
+        let backgroundColor = datapoint.Background_color;
         
         dataArr.push([items,sweetness])
         for (let i = 0; i < lushname.length; i++) {
@@ -30,6 +31,7 @@ fetch(opensheet_url)
         if(soapNameInput.value == items) {
         count = map(sweetness,1,10,10,60);
         refresh = map(refreshyness,1,10,10,100);
+        c2 = `${backgroundColor}`;
         console.log(count);
 				//do something with the data here
                 // }
