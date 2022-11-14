@@ -57,7 +57,7 @@ for (let j = 0; j < 9; j++) {
   let flowerSize = [];
   let petalSize = [];
   flowerSize.push(Math.random(50,150));
-  petalSize[j] = flowerSize[j] + 40;
+  petalSize[j] = flowerSize + 40;
   
   for (let i = count; i > 0; i--) {
   push();
