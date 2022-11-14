@@ -27,7 +27,7 @@ fetch(opensheet_url)
         for (let i = 0; i < lushname.length; i++) {
             // if(item[itemNum] == lushname[itemNum]) {
         if(soapNameInput.value == datapoint.Item) {
-        console.log(dataArr);
+        console.log(dataArr[0]);
 				//do something with the data here
                 // }
             }
