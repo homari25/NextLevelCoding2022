@@ -13,11 +13,11 @@ html, body {
     float:left;
   }
   
-h3{
+h2{
   font-size:24px;
   font-family: "lushfont", sans-serif;
 }
 
-  p{
+p{
    font-family:"IBMplexSans", sans-serif;
-  }
+}
