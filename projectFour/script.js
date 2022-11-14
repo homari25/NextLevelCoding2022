@@ -31,7 +31,7 @@ fetch(opensheet_url)
         if(soapNameInput.value == items) {
         count = map(sweetness,1,10,10,60);
         refresh = map(refreshyness,1,10,10,100);
-        c2 = `${backgroundColor}`;
+        c2 = `#${backgroundColor}`;
         console.log(count);
 				//do something with the data here
                 // }
