@@ -22,16 +22,20 @@ fetch(opensheet_url)
         for (let datapoint of data) {
         let sweetness = parseFloat(datapoint.Sweetness);
         let items = datapoint.Item;
+        let refreshyness = parseFloat(datapoint.Refreshness);
         
         dataArr.push([items,sweetness])
         for (let i = 0; i < lushname.length; i++) {
             // if(item[itemNum] == lushname[itemNum]) {
         if(soapNameInput.value == items) {
         count = map(sweetness,1,10,10,60);
+        refresh = map(refreshyness,1,10,10,100);
         console.log(count);
 				//do something with the data here
                 // }
-            }
+        } else {
+            console.log("Oops,sorry! We don't have that.")
+        }
         }
         }
     })
