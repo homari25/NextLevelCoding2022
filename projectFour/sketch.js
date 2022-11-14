@@ -88,7 +88,7 @@ function draw() {
   pop();
   
   push();
-  translate(80,240);
+  translate(60,220);
   rotate(TWO_PI/count * i);   
   drawFlowerFour();
   fill(c1);
@@ -97,7 +97,7 @@ function draw() {
   pop();
 
   push();
-  translate(120,240);
+  translate(200,240);
   rotate(TWO_PI/count * i);   
   drawFlowerFive();
   fill(c1);
@@ -106,7 +106,7 @@ function draw() {
   pop();
   
   push();
-  translate(200,380);
+  translate(250,350);
   rotate(TWO_PI/count * i);   
   drawFlowerSix();
   fill(c1);
@@ -115,7 +115,7 @@ function draw() {
   pop();
 
   push();
-  translate(80,300);
+  translate(120,300);
   rotate(TWO_PI/count * i);   
   drawFlowerSeven();
   fill(c1);
@@ -124,7 +124,7 @@ function draw() {
   pop();
 
   push();
-  translate(120,180);
+  translate(180,180);
   rotate(TWO_PI/count * i);   
   drawFlowerEight();
   fill(c1);
@@ -133,7 +133,7 @@ function draw() {
   pop();
 
   push();
-  translate(250,360);
+  translate(300,360);
   rotate(TWO_PI/count * i);   
   drawFlowerNine();
   fill(c1);
