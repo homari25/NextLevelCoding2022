@@ -61,7 +61,7 @@ function draw() {
   
   for (let i = count; i > 0; i--) {
   push();
-  translate(80,150);
+  translate(80,40);
   rotate(TWO_PI/count * i);
   drawFlower();
   fill(c1);
@@ -88,7 +88,7 @@ function draw() {
   pop();
   
   push();
-  translate(80,300);
+  translate(80,240);
   rotate(TWO_PI/count * i);   
   drawFlowerFour();
   fill(c1);
@@ -166,7 +166,7 @@ function renderWave() {
   for (let rows = 0; rows < 30; rows++) {
   // A simple way to draw the wave with an ellipse at each location
     for (let x = 0; x < yvalues.length; x++) {
-    ellipse(height / 2 + yvalues[x] + 20 * rows - 300, x * xspacing, 1, 1);
+    ellipse(height / 2 + yvalues[x] + 20 * rows - 300, x * xspacing, 3, 3);
     }
   }
 }
