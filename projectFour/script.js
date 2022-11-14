@@ -26,8 +26,8 @@ fetch(opensheet_url)
         // dataArr.push([items])
         for (let i = 0; i < lushname.length; i++) {
             // if(item[itemNum] == lushname[itemNum]) {
-        if(soapNameInput.value == data.Item) {
-        console.log(datapoint.Sweetness[i]);
+        if(soapNameInput.value == datapoint.Item) {
+        console.log(data);
 				//do something with the data here
                 // }
             }
