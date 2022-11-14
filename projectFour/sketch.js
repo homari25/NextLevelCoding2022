@@ -44,52 +44,6 @@ changerElem.oninput = function() {
   c2 = changerElem.value;
 }
 
-let sheetID = "1BrindtQ8AOFVsbQWs8wH3W0S814nRVrnJRSnytv4ct0";
-let tabName = 'Sheet1'
-
-let opensheet_url = `https://opensheet.elk.sh/${sheetID}/${tabName}`
-
-let dataArr = [];
-let lushname = ["Outback Mate","Karma","Sleepy","Honey I washed the kids","Christmas Cranberry","Bohemian","Sandstone","Sea Vegetable","Baked Alaska","Snow Fairy","Lemon Zest","Golden Pear","Ro's Argan","Olive Tree","Goddess",""]
-
-let soapNameInput = document.getElementById("soapName")
-
-
-console.log(opensheet_url);
-
-function submit () {
-
-let soapName = soapNameInput.value;
-fetch(opensheet_url)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        for (let datapoint of data) {
-        let sweetness = parseFloat(datapoint.Sweetness);
-        let items = datapoint.Item;
-        
-        dataArr.push([items,sweetness])
-        for (let i = 0; i < lushname.length; i++) {
-            // if(item[itemNum] == lushname[itemNum]) {
-        if(soapNameInput.value == items) {
-        let count = map(sweetness,1,10,10,60);
-        console.log(items,sweetness,count);
-				//do something with the data here
-                // }
-            }
-        }
-        }
-    })
-    .catch(function (err) {
-        console.log("Something went wrong!", err);
-    });
-}
-
-function map(value, low1, high1, low2, high2) {
-    return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
-}
-
 
 function draw() {
   background(c2);
@@ -98,7 +52,7 @@ function draw() {
   calcWave();
   renderWave();
   submit();
-
+  
 // for (let j = 0; j < 9; j++) {
 //   let flowerSize = [];
 //   let petalSize = [];
