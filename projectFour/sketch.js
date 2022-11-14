@@ -54,7 +54,7 @@ function draw() {
 
   for (let i = count; i > 0; i--) {
   push();
-  translate(100,180);
+  translate(80,150);
   rotate(TWO_PI/count * i);
   drawFlower();
   fill(c1);
@@ -70,7 +70,7 @@ function draw() {
   pop();
     
   push();
-  translate(300,180);
+  translate(330,180);
   rotate(TWO_PI/count * i);   
   drawFlowerThree();
   fill(c1);
@@ -78,7 +78,7 @@ function draw() {
   pop();
   
   push();
-  translate(120,300);
+  translate(80,300);
   rotate(TWO_PI/count * i);   
   drawFlowerFour();
   fill(c1);
@@ -94,12 +94,37 @@ function draw() {
   pop();
   
   push();
-  translate(280,400);
+  translate(280,350);
   rotate(TWO_PI/count * i);   
   drawFlowerSix();
   fill(c1);
   ellipse(0,0,60,60);
   pop();
+
+  push();
+  translate(80,350);
+  rotate(TWO_PI/count * i);   
+  drawFlowerSeven();
+  fill(c1);
+  ellipse(0,0,60,60);
+  pop();
+
+  push();
+  translate(120,180);
+  rotate(TWO_PI/count * i);   
+  drawFlowerEight();
+  fill(c1);
+  ellipse(0,0,60,60);
+  pop();
+
+  push();
+  translate(250,360);
+  rotate(TWO_PI/count * i);   
+  drawFlowerNine();
+  fill(c1);
+  ellipse(0,0,60,60);
+  pop();
+
   }
   
   // console.log(c1);
@@ -168,6 +193,30 @@ function drawFlowerFive(){
 }
 
 function drawFlowerSix(){
+  noStroke();
+  fill(255);
+  rect(0,0,2,100);
+  // fill(0,255,0,70);
+  // ellipse(0,0,90,90);
+}
+
+function drawFlowerSeven(){
+  noStroke();
+  fill(255);
+  rect(0,0,2,100);
+  // fill(0,255,0,70);
+  // ellipse(0,0,90,90);
+}
+
+function drawFlowerEight(){
+  noStroke();
+  fill(255);
+  rect(0,0,2,100);
+  // fill(0,255,0,70);
+  // ellipse(0,0,90,90);
+}
+
+function drawFlowerNine(){
   noStroke();
   fill(255);
   rect(0,0,2,100);
