@@ -14,9 +14,10 @@ html, body {
   }
   
 h3{
-  font-family: sans-serif;
+  font-size:24px;
+  font-family: "lushfont", sans-serif;
 }
 
   p{
-   font-family: sans-serif;
+   font-family:"IBMplexSans", sans-serif;
   }
