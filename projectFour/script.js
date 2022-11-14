@@ -7,9 +7,13 @@ let dataArr = [];
 let lushname = ["Outback Mate","Karma","Sleepy","Honey I washed the kids","Christmas Cranberry","Bohemian","Sandstone","Sea Vegetable","Baked Alaska","Snow Fairy","Lemon Zest","Golden Pear","Ro's Argan","Olive Tree","Goddess",""]
 
 let soapNameInput = document.getElementById("soapName")
-let soapName = soapNameInput.value;
+
 
 console.log(opensheet_url);
+
+function submit () {
+
+let soapName = soapNameInput.value;
 fetch(opensheet_url)
     .then(function (response) {
         return response.json();
@@ -33,6 +37,7 @@ fetch(opensheet_url)
     .catch(function (err) {
         console.log("Something went wrong!", err);
     });
+}
 
 function map(value, low1, high1, low2, high2) {
     return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
