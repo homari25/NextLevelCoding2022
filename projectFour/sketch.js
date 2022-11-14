@@ -22,8 +22,6 @@ let flowerChanger = document.getElementById("flowerChanger");
 //flower
 let randomX = random(100,400);
 let randomY = random(100,400);
-let flowerSize = [] = random(50,150);
-let petalSize = flowerSize + 40;
 
 
 function setup() {
@@ -55,6 +53,9 @@ function draw() {
   
 
 for (let j = 0; j < 9; j++) {
+  let flowerSize = [] = random(50,150);
+  let petalSize = [] = flowerSize + 40;
+  
   for (let i = count; i > 0; i--) {
   push();
   translate(80,150);
