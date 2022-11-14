@@ -47,7 +47,7 @@ changerElem.oninput = function() {
 
 function draw() {
   background(c2);
-  count = countSlider.value;
+  // count = countSlider.value;
   refresh = refreshSlider.value;
   calcWave();
   renderWave();
