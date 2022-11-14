@@ -21,7 +21,7 @@ fetch(opensheet_url)
     .then(function (data) {
         for (let datapoint of data) {
         let sweetness = parseFloat(datapoint.Sweetness);
-        let items = parseFloat(datapoint.Item);
+        let items = datapoint.Item;
         
         dataArr.push([items,sweetness])
         for (let i = 0; i < lushname.length; i++) {
