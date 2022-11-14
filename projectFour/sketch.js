@@ -51,8 +51,8 @@ function draw() {
   refresh = refreshSlider.value;
   calcWave();
   renderWave();
-  submit();
-  
+  // submit();
+
 // for (let j = 0; j < 9; j++) {
 //   let flowerSize = [];
 //   let petalSize = [];
