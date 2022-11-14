@@ -20,7 +20,7 @@ fetch(opensheet_url)
         for (let i = 0; i < lushname.length; i++) {
             // if(item[itemNum] == lushname[itemNum]) {
         count = map(sweetness,1,10,10,40);
-        console.log(datapoint.Item);
+        console.log(datapoint.Item[10]);
 				//do something with the data here
                 // }
             }
