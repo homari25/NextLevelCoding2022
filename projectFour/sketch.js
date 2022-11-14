@@ -115,7 +115,7 @@ function draw() {
   pop();
 
   push();
-  translate(80,350);
+  translate(80,300);
   rotate(TWO_PI/count * i);   
   drawFlowerSeven();
   fill(c1);
