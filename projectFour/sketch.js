@@ -12,7 +12,7 @@ let amplitude = 70.0; // Height of wave
 let period = 500.0; // How many pixels before the wave repeats
 let dx; // Value for incrementing x
 let yvalues; // Using an array to store height values for the wave
-
+let offset = 0.05;
 //color
 let c1 = "rgb(255,125,0)";
 let c2 = "rgb(0,125,125)"
@@ -155,8 +155,9 @@ function calcWave() {
   // For every x value, calculate a y value with sine function
   let x = theta;
   for (let i = 0; i < yvalues.length; i++) {
-    yvalues[i] = sin(x) * refresh;
+    yvalues[i] = sin(x) * refresh * offset;
     x += dx;
+    offset += offset
   }
 }
 
