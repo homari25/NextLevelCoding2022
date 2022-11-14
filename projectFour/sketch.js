@@ -20,10 +20,9 @@ let changerElem = document.getElementById("backgroundChanger");
 let flowerChanger = document.getElementById("flowerChanger");
 
 //flower
-let randomX = random(100,400);
-let randomY = random(100,400);
-let flowerSize = [];
-let petalSize = [];
+// let randomX = random(100,400);
+// let randomY = random(100,400);
+
 
 
 function setup() {
@@ -55,8 +54,10 @@ function draw() {
   
 
 for (let j = 0; j < 9; j++) {
+  let flowerSize = [];
+  let petalSize = [];
   flowerSize.push(Math.random(50,150));
-  petalSize = flowerSize + 40;
+  petalSize[j] = flowerSize[j] + 40;
   
   for (let i = count; i > 0; i--) {
   push();
