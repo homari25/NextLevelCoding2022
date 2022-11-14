@@ -22,8 +22,12 @@ let flowerChanger = document.getElementById("flowerChanger");
 //flower
 // let randomX = random(100,400);
 // let randomY = random(100,400);
-
-
+let petalSizeOne = 100;
+let petalSizeTwo = 150;
+let petalSizeThree = 80;
+let flowerSizeOne = 60;
+let flowerSizeTwo = 110;
+let flowerSizeThree = 40;
 
 function setup() {
   createCanvas(400, 400);
@@ -65,7 +69,7 @@ function draw() {
   rotate(TWO_PI/count * i);
   drawFlower();
   fill(c1);
-  ellipse(0,0,60,60);
+  ellipse(0,0,flowerSizeOne,flowerSizeOne);
 //ellipse(0,0,flowerSize[j],flowerSize[j]);
   pop();
 
@@ -74,7 +78,7 @@ function draw() {
   rotate(TWO_PI/count * i);   
   drawFlowerTwo();
   fill(c1);
-  ellipse(0,0,60,60);
+  ellipse(0,0,flowerSizeTwo,flowerSizeTwo);
 //ellipse(0,0,flowerSize[j],flowerSize[j]);
   pop();
     
@@ -83,7 +87,7 @@ function draw() {
   rotate(TWO_PI/count * i);   
   drawFlowerThree();
   fill(c1);
-  ellipse(0,0,60,60);
+  ellipse(0,0,flowerSizeThree,flowerSizeThree);
 //ellipse(0,0,flowerSize[j],flowerSize[j]);
   pop();
   
@@ -92,7 +96,7 @@ function draw() {
   rotate(TWO_PI/count * i);   
   drawFlowerFour();
   fill(c1);
-  ellipse(0,0,60,60);
+  ellipse(0,0,flowerSizeOne,flowerSizeOne);
 //ellipse(0,0,flowerSize[j],flowerSize[j]);
   pop();
 
@@ -101,7 +105,7 @@ function draw() {
   rotate(TWO_PI/count * i);   
   drawFlowerFive();
   fill(c1);
-  ellipse(0,0,60,60);
+  ellipse(0,0,flowerSizeTwo,flowerSizeTwo);
 //ellipse(0,0,flowerSize[j],flowerSize[j]);
   pop();
   
@@ -110,7 +114,7 @@ function draw() {
   rotate(TWO_PI/count * i);   
   drawFlowerSix();
   fill(c1);
-  ellipse(0,0,60,60);
+  ellipse(0,0,flowerSizeThree,flowerSizeThree);
 //ellipse(0,0,flowerSize[j],flowerSize[j]);
   pop();
 
@@ -119,7 +123,7 @@ function draw() {
   rotate(TWO_PI/count * i);   
   drawFlowerSeven();
   fill(c1);
-  ellipse(0,0,60,60);
+  ellipse(0,0,flowerSizeOne,flowerSizeOne);
 //ellipse(0,0,flowerSize[j],flowerSize[j]);
   pop();
 
@@ -128,7 +132,7 @@ function draw() {
   rotate(TWO_PI/count * i);   
   drawFlowerEight();
   fill(c1);
-  ellipse(0,0,60,60);
+  ellipse(0,0,flowerSizeTwo,flowerSizeTwo);
 //ellipse(0,0,flowerSize[j],flowerSize[j]);
   pop();
 
@@ -137,7 +141,7 @@ function draw() {
   rotate(TWO_PI/count * i);   
   drawFlowerNine();
   fill(c1);
-  ellipse(0,0,60,60);
+  ellipse(0,0,flowerSizeThree,flowerSizeThree);
 //ellipse(0,0,flowerSize[j],flowerSize[j]);
   pop();
 
@@ -174,7 +178,7 @@ function renderWave() {
 function drawFlower(){
   noStroke();
   fill(255);
-  rect(0,0,2,100);
+  rect(0,0,2,petalSizeOne);
   // rect(0,0,2,petalSize[0]);
 }
 
@@ -183,14 +187,14 @@ function drawFlowerTwo(){
   // fill(0,255,0,50);
   // ellipse(0,0,190,190);
   fill(255);
-  rect(0,0,2,100);
+  rect(0,0,2,petalSizeTwo);
   // rect(0,0,2,petalSize[1]);
 }
 
 function drawFlowerThree(){
   noStroke();
   fill(255);
-  rect(0,0,2,100);
+  rect(0,0,2,petalSizeThree);
   // rect(0,0,2,petalSize[2]);
   // fill(c1);
   // ellipse(0,0,90,90);
@@ -199,7 +203,7 @@ function drawFlowerThree(){
 function drawFlowerFour(){
   noStroke();
   fill(255);
-  rect(0,0,2,100);
+  rect(0,0,2,petalSizeOne);
   // rect(0,0,2,petalSize[3]);
 //   fill(0,255,0,70);
 //   ellipse(0,0,90,90);
@@ -208,7 +212,7 @@ function drawFlowerFour(){
 function drawFlowerFive(){
   noStroke();
   fill(255);
-  rect(0,0,2,100);
+  rect(0,0,2,petalSizeTwo);
   // rect(0,0,2,petalSize[4]);
   // fill(0,255,0,70);
   // ellipse(0,0,90,90);
@@ -217,7 +221,7 @@ function drawFlowerFive(){
 function drawFlowerSix(){
   noStroke();
   fill(255);
-  rect(0,0,2,100);
+  rect(0,0,2,petalSizeThree);
   // rect(0,0,2,petalSize[5]);
   // fill(0,255,0,70);
   // ellipse(0,0,90,90);
@@ -226,7 +230,7 @@ function drawFlowerSix(){
 function drawFlowerSeven(){
   noStroke();
   fill(255);
-  rect(0,0,2,100);
+  rect(0,0,2,petalSizeOne);
   // rect(0,0,2,petalSize[6]);
   // fill(0,255,0,70);
   // ellipse(0,0,90,90);
@@ -235,7 +239,7 @@ function drawFlowerSeven(){
 function drawFlowerEight(){
   noStroke();
   fill(255);
-  rect(0,0,2,100);
+  rect(0,0,2,petalSizeTwo);
   // rect(0,0,2,petalSize[7]);
   // fill(0,255,0,70);
   // ellipse(0,0,90,90);
@@ -244,7 +248,7 @@ function drawFlowerEight(){
 function drawFlowerNine(){
   noStroke();
   fill(255);
-  rect(0,0,2,100);
+  rect(0,0,2,petalSizeThree);
   // rect(0,0,2,petalSize[8]);
   // fill(0,255,0,70);
   // ellipse(0,0,90,90);
