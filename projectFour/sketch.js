@@ -175,7 +175,7 @@ function renderWave() {
 function drawFlower(){
   noStroke();
   fill(255);
-  triangle(0,0,1,petalSize, 2,0);
+  triangle(0,petalSize,2.5,0,5,petalSize);
   // rect(0,0,2,petalSize[0]);
 }
 
