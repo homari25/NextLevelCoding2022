@@ -24,8 +24,8 @@ let randomX = Math.random() * 400 - 100;
 let randomY = Math.random() * 400 - 100;
 // let petalSize = Math.random() * 400 - 100;
 // let flowerSize = petalSize - 60;
-let petalSize = 100;
-let flowerSize = petalSize - 60;
+let petalSize = 90;
+let flowerSize = petalSize - 50;
 
 function setup() {
   createCanvas(400, 400);
