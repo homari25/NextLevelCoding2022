@@ -62,7 +62,8 @@ for (let j = 0; j < 9; j++) {
   // for (let i = count; i > 0; i--) {
   push();
   translate(20,80);
-  rotate(TWO_PI/count * i);
+  rotate(TWO_PI/count);
+  // rotate(TWO_PI/count * i);
   drawFlower();
   fill(c1);
   ellipse(0,0,flowerSize,flowerSize);
@@ -71,7 +72,7 @@ for (let j = 0; j < 9; j++) {
 
   push();
   translate(200,60);
-  rotate(TWO_PI/count * i);   
+  rotate(TWO_PI/count); 
   drawFlowerTwo();
   fill(c1);
   ellipse(0,0,flowerSize,flowerSize);
@@ -80,7 +81,7 @@ for (let j = 0; j < 9; j++) {
     
   push();
   translate(330,180);
-  rotate(TWO_PI/count * i);   
+  rotate(TWO_PI/count); 
   drawFlowerThree();
   fill(c1);
   ellipse(0,0,flowerSize,flowerSize);
@@ -89,7 +90,7 @@ for (let j = 0; j < 9; j++) {
   
   push();
   translate(60,220);
-  rotate(TWO_PI/count * i);   
+  rotate(TWO_PI/count); 
   drawFlowerFour();
   fill(c1);
   ellipse(0,0,flowerSize,flowerSize);
@@ -98,7 +99,7 @@ for (let j = 0; j < 9; j++) {
 
   push();
   translate(200,240);
-  rotate(TWO_PI/count * i);   
+  rotate(TWO_PI/count); 
   drawFlowerFive();
   fill(c1);
   ellipse(0,0,flowerSize,flowerSize);
@@ -107,7 +108,7 @@ for (let j = 0; j < 9; j++) {
   
   push();
   translate(250,350);
-  rotate(TWO_PI/count * i);   
+  rotate(TWO_PI/count);  
   drawFlowerSix();
   fill(c1);
   ellipse(0,0,flowerSize,flowerSize);
@@ -116,7 +117,7 @@ for (let j = 0; j < 9; j++) {
 
   push();
   translate(120,300);
-  rotate(TWO_PI/count * i);   
+  rotate(TWO_PI/count); 
   drawFlowerSeven();
   fill(c1);
   ellipse(0,0,flowerSize,flowerSize);
@@ -125,7 +126,7 @@ for (let j = 0; j < 9; j++) {
 
   push();
   translate(180,180);
-  rotate(TWO_PI/count * i);   
+  rotate(TWO_PI/count);
   drawFlowerEight();
   fill(c1);
   ellipse(0,0,flowerSize,flowerSize);
@@ -134,7 +135,7 @@ for (let j = 0; j < 9; j++) {
 
   push();
   translate(300,360);
-  rotate(TWO_PI/count * i);   
+  rotate(TWO_PI/count);
   drawFlowerNine();
   fill(c1);
   ellipse(0,0,flowerSize,flowerSize);
