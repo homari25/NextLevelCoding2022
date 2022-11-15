@@ -251,3 +251,7 @@ function drawFlowerNine(){
   // ellipse(0,0,90,90);
 }
 
+function favTutorial() {  
+  var mylist = document.getElementById("myList");  
+  document.getElementById("favourite").value = mylist.options[mylist.selectedIndex].text;  
+  }  
