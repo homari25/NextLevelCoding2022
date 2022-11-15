@@ -9,8 +9,11 @@ let lushname = ["Outback Mate","Karma","Sleepy","Honey I washed the kids","Chris
 let soapNameInput = document.getElementById("soapName")
 
 //pulldown list
+function favTutorial() {
 let mylist = document.getElementById("myList");  
 let soapNameDown = mylist.options[mylist.selectedIndex].text;  
+console.log(soapNameDown);
+}
 
 console.log(opensheet_url);
 
@@ -32,7 +35,7 @@ fetch(opensheet_url)
         dataArr.push([items,sweetness])
         for (let i = 0; i < lushname.length; i++) {
             // if(item[itemNum] == lushname[itemNum]) {
-        if(soapNameDown == items) {
+        if(soapNameDown.value == items) {
         count = map(sweetness,1,10,10,60);
         refresh = map(refreshyness,10,1,10,100);
         c1 = `#${flowerColor}`
