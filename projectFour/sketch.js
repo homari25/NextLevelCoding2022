@@ -22,8 +22,8 @@ let flowerChanger = document.getElementById("flowerChanger");
 //flower
 // let randomX = random(100,400);
 // let randomY = random(100,400);
-let petalSize = Math.random() * 400 - 100;
-let flowerSize = petalSize - 60;
+// let petalSize = Math.random() * 400 - 100;
+// let flowerSize = petalSize - 60;
 
 function setup() {
   createCanvas(400, 400);
@@ -53,11 +53,11 @@ function draw() {
   renderWave();
   // submit();
 
-// for (let j = 0; j < 9; j++) {
-//   let flowerSize = [];
-//   let petalSize = [];
-//   flowerSize.push(Math.random(50,150));
-//   petalSize[j] = flowerSize + 40;
+for (let k = 0; k < 9; k++) {
+  let flowerSize = Math.random() * 400 - 100;
+  let petalSize = flowerSize - 60;
+  // flowerSize.push(Math.random(50,150));
+  // petalSize[j] = flowerSize + 40;
   
   for (let i = count; i > 0; i--) {
   push();
@@ -141,7 +141,7 @@ function draw() {
 //ellipse(0,0,flowerSize[j],flowerSize[j]);
   pop();
 
-  // }
+  }
 }
   
   // console.log(c1);
