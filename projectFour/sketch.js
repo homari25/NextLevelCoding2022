@@ -24,8 +24,8 @@ let randomX = Math.random() * 400 - 100;
 let randomY = Math.random() * 400 - 100;
 // let petalSize = Math.random() * 400 - 100;
 // let flowerSize = petalSize - 60;
-let petalSize = 90;
-let flowerSize = petalSize - 50;
+// let petalSize = 80;
+// let flowerSize = petalSize - 40;
 
 function setup() {
   createCanvas(400, 400);
@@ -55,13 +55,13 @@ function draw() {
   renderWave();
   // submit();
 
-// for (let k = 0; k < 9; k++) {
-  // flowerSize.push(Math.random(50,150));
-  // petalSize[j] = flowerSize + 40;
+for (let j = 0; j < 9; j++) {
+  flowerSize = (Math.random(50,150));
+  petalSize = flowerSize + 40;
   
-  for (let i = count; i > 0; i--) {
+  // for (let i = count; i > 0; i--) {
   push();
-  translate(randomX,randomY);
+  translate(20,80);
   rotate(TWO_PI/count * i);
   drawFlower();
   fill(c1);
