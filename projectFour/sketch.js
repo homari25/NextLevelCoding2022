@@ -1,5 +1,5 @@
 //counter
-let count = 6;
+let count = 10;
 let refresh = 6;
 let countSlider = document.getElementById("countSlider");
 let refreshSlider = document.getElementById("refreshSlider");
