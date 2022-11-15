@@ -63,7 +63,7 @@ function draw() {
   push();
   translate(20,80);
   rotate(TWO_PI/count * i);
-  drawFlower();
+  // drawFlower();
   fill(c1);
   ellipse(0,0,flowerSize,flowerSize);
 //ellipse(0,0,flowerSize[j],flowerSize[j]);
@@ -251,7 +251,3 @@ function drawFlowerNine(){
   // ellipse(0,0,90,90);
 }
 
-function favTutorial() {  
-  var mylist = document.getElementById("myList");  
-  document.getElementById("favourite").value = mylist.options[mylist.selectedIndex].text;  
-  }  

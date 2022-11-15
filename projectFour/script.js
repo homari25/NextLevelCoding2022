@@ -8,6 +8,9 @@ let lushname = ["Outback Mate","Karma","Sleepy","Honey I washed the kids","Chris
 
 let soapNameInput = document.getElementById("soapName")
 
+//pulldown list
+let mylist = document.getElementById("myList");  
+document.getElementById("favourite").value = mylist.options[mylist.selectedIndex].text;  
 
 console.log(opensheet_url);
 
@@ -51,3 +54,5 @@ fetch(opensheet_url)
 function map(value, low1, high1, low2, high2) {
     return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
 }
+
+
