@@ -22,8 +22,8 @@ let flowerChanger = document.getElementById("flowerChanger");
 //flower
 // let randomX = random(100,400);
 // let randomY = random(100,400);
-// let petalSize = Math.random() * 400 - 100;
-// let flowerSize = petalSize - 60;
+let petalSize = Math.random() * 400 - 100;
+let flowerSize = petalSize - 60;
 
 function setup() {
   createCanvas(400, 400);
@@ -53,9 +53,7 @@ function draw() {
   renderWave();
   // submit();
 
-for (let k = 0; k < 9; k++) {
-  let flowerSize = Math.random() * 400 - 100;
-  let petalSize = flowerSize - 60;
+// for (let k = 0; k < 9; k++) {
   // flowerSize.push(Math.random(50,150));
   // petalSize[j] = flowerSize + 40;
   
@@ -145,7 +143,7 @@ for (let k = 0; k < 9; k++) {
 }
   
   // console.log(c1);
-}
+// }
 
 function calcWave() {
   // Increment theta (try different values for
