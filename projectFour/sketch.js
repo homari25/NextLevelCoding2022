@@ -20,8 +20,8 @@ let changerElem = document.getElementById("backgroundChanger");
 let flowerChanger = document.getElementById("flowerChanger");
 
 //flower
-// let randomX = random(100,400);
-// let randomY = random(100,400);
+let randomX = Math.random() * 400 - 100;
+let randomY = Math.random() * 400 - 100;
 // let petalSize = Math.random() * 400 - 100;
 // let flowerSize = petalSize - 60;
 let petalSize = 100;
