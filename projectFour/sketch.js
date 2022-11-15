@@ -61,7 +61,7 @@ function draw() {
   
   for (let i = count; i > 0; i--) {
   push();
-  translate(80,40);
+  translate(randomX,randomY);
   rotate(TWO_PI/count * i);
   drawFlower();
   fill(c1);
