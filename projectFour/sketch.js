@@ -175,7 +175,7 @@ function renderWave() {
 function drawFlower(){
   noStroke();
   fill(255);
-  triangle(0,petalSize,2.5,0,5,petalSize);
+  triangle(0,petalSize,3,0,6,petalSize);
   // rect(0,0,2,petalSize[0]);
 }
 
@@ -184,14 +184,14 @@ function drawFlowerTwo(){
   // fill(0,255,0,50);
   // ellipse(0,0,190,190);
   fill(255);
-  rect(0,0,2,petalSize);
+ triangle(0,petalSize,3,0,6,petalSize);
   // rect(0,0,2,petalSize[1]);
 }
 
 function drawFlowerThree(){
   noStroke();
   fill(255);
-  rect(0,0,2,petalSize);
+ triangle(0,petalSize,3,0,6,petalSize);
   // rect(0,0,2,petalSize[2]);
   // fill(c1);
   // ellipse(0,0,90,90);
@@ -200,7 +200,7 @@ function drawFlowerThree(){
 function drawFlowerFour(){
   noStroke();
   fill(255);
-  rect(0,0,2,petalSize);
+ triangle(0,petalSize,3,0,6,petalSize);
   // rect(0,0,2,petalSize[3]);
 //   fill(0,255,0,70);
 //   ellipse(0,0,90,90);
@@ -209,7 +209,7 @@ function drawFlowerFour(){
 function drawFlowerFive(){
   noStroke();
   fill(255);
-  rect(0,0,2,petalSize);
+ triangle(0,petalSize,3,0,6,petalSize);
   // rect(0,0,2,petalSize[4]);
   // fill(0,255,0,70);
   // ellipse(0,0,90,90);
@@ -218,7 +218,7 @@ function drawFlowerFive(){
 function drawFlowerSix(){
   noStroke();
   fill(255);
-  rect(0,0,2,petalSize);
+ triangle(0,petalSize,3,0,6,petalSize);
   // rect(0,0,2,petalSize[5]);
   // fill(0,255,0,70);
   // ellipse(0,0,90,90);
@@ -227,7 +227,7 @@ function drawFlowerSix(){
 function drawFlowerSeven(){
   noStroke();
   fill(255);
-  rect(0,0,2,petalSize);
+ triangle(0,petalSize,3,0,6,petalSize);
   // rect(0,0,2,petalSize[6]);
   // fill(0,255,0,70);
   // ellipse(0,0,90,90);
@@ -236,7 +236,7 @@ function drawFlowerSeven(){
 function drawFlowerEight(){
   noStroke();
   fill(255);
-  rect(0,0,2,petalSize);
+ triangle(0,petalSize,3,0,6,petalSize);
   // rect(0,0,2,petalSize[7]);
   // fill(0,255,0,70);
   // ellipse(0,0,90,90);
@@ -245,7 +245,7 @@ function drawFlowerEight(){
 function drawFlowerNine(){
   noStroke();
   fill(255);
-  rect(0,0,2,petalSize);
+ triangle(0,petalSize,3,0,6,petalSize);
   // rect(0,0,2,petalSize[8]);
   // fill(0,255,0,70);
   // ellipse(0,0,90,90);
