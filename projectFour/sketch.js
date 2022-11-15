@@ -19,6 +19,8 @@ let c2 = "rgb(0,125,125)" //background
 let changerElem = document.getElementById("backgroundChanger");
 let flowerChanger = document.getElementById("flowerChanger");
 
+let myFlowers = [];
+
 //flower
 let randomX = Math.random() * 400 - 100;
 let randomY = Math.random() * 400 - 100;
@@ -54,6 +56,9 @@ function draw() {
   calcWave();
   renderWave();
   // submit();
+  
+
+  // noLoop();
 
 // for (let k = 0; k < 9; k++) {
   // flowerSize.push(Math.random(50,150));
@@ -63,9 +68,10 @@ function draw() {
   push();
   translate(20,80);
   rotate(TWO_PI/count * i);
+  let flowerSizeMultiplier = random(0.5, 1.5)
   // drawFlower();
   fill(c1);
-  ellipse(0,0,flowerSize,flowerSize);
+  ellipse(0,0,flowerSize*flowerSizeMultiplier[0],flowerSize*flowerSizeMultiplier[0]);
 //ellipse(0,0,flowerSize[j],flowerSize[j]);
   pop();
 
