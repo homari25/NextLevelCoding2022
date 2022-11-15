@@ -10,7 +10,7 @@ let soapNameInput = document.getElementById("soapName")
 
 //pulldown list
 let mylist = document.getElementById("myList");  
-document.getElementById("favourite").value = mylist.options[mylist.selectedIndex].text;  
+let soapNameDown = mylist.options[mylist.selectedIndex].text;  
 
 console.log(opensheet_url);
 
@@ -32,7 +32,7 @@ fetch(opensheet_url)
         dataArr.push([items,sweetness])
         for (let i = 0; i < lushname.length; i++) {
             // if(item[itemNum] == lushname[itemNum]) {
-        if(soapNameInput.value == items) {
+        if(soapNameDown == items) {
         count = map(sweetness,1,10,10,60);
         refresh = map(refreshyness,10,1,10,100);
         c1 = `#${flowerColor}`
