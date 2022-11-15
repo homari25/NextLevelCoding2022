@@ -24,8 +24,8 @@ let randomX = Math.random() * 400 - 100;
 let randomY = Math.random() * 400 - 100;
 // let petalSize = Math.random() * 400 - 100;
 // let flowerSize = petalSize - 60;
-// let petalSize = 80;
-// let flowerSize = petalSize - 40;
+let petalSize = 80;
+let flowerSize = petalSize - 40;
 
 function setup() {
   createCanvas(400, 400);
@@ -55,15 +55,14 @@ function draw() {
   renderWave();
   // submit();
 
-for (let j = 0; j < 9; j++) {
-  flowerSize = (Math.random(50,150));
-  petalSize = flowerSize + 40;
+// for (let k = 0; k < 9; k++) {
+  // flowerSize.push(Math.random(50,150));
+  // petalSize[j] = flowerSize + 40;
   
-  // for (let i = count; i > 0; i--) {
+  for (let i = count; i > 0; i--) {
   push();
   translate(20,80);
-  rotate(TWO_PI/count);
-  // rotate(TWO_PI/count * i);
+  rotate(TWO_PI/count * i);
   drawFlower();
   fill(c1);
   ellipse(0,0,flowerSize,flowerSize);
@@ -72,7 +71,7 @@ for (let j = 0; j < 9; j++) {
 
   push();
   translate(200,60);
-  rotate(TWO_PI/count); 
+  rotate(TWO_PI/count * i);   
   drawFlowerTwo();
   fill(c1);
   ellipse(0,0,flowerSize,flowerSize);
@@ -81,7 +80,7 @@ for (let j = 0; j < 9; j++) {
     
   push();
   translate(330,180);
-  rotate(TWO_PI/count); 
+  rotate(TWO_PI/count * i);   
   drawFlowerThree();
   fill(c1);
   ellipse(0,0,flowerSize,flowerSize);
@@ -90,7 +89,7 @@ for (let j = 0; j < 9; j++) {
   
   push();
   translate(60,220);
-  rotate(TWO_PI/count); 
+  rotate(TWO_PI/count * i);   
   drawFlowerFour();
   fill(c1);
   ellipse(0,0,flowerSize,flowerSize);
@@ -99,7 +98,7 @@ for (let j = 0; j < 9; j++) {
 
   push();
   translate(200,240);
-  rotate(TWO_PI/count); 
+  rotate(TWO_PI/count * i);   
   drawFlowerFive();
   fill(c1);
   ellipse(0,0,flowerSize,flowerSize);
@@ -108,7 +107,7 @@ for (let j = 0; j < 9; j++) {
   
   push();
   translate(250,350);
-  rotate(TWO_PI/count);  
+  rotate(TWO_PI/count * i);   
   drawFlowerSix();
   fill(c1);
   ellipse(0,0,flowerSize,flowerSize);
@@ -117,7 +116,7 @@ for (let j = 0; j < 9; j++) {
 
   push();
   translate(120,300);
-  rotate(TWO_PI/count); 
+  rotate(TWO_PI/count * i);   
   drawFlowerSeven();
   fill(c1);
   ellipse(0,0,flowerSize,flowerSize);
@@ -126,7 +125,7 @@ for (let j = 0; j < 9; j++) {
 
   push();
   translate(180,180);
-  rotate(TWO_PI/count);
+  rotate(TWO_PI/count * i);   
   drawFlowerEight();
   fill(c1);
   ellipse(0,0,flowerSize,flowerSize);
@@ -135,7 +134,7 @@ for (let j = 0; j < 9; j++) {
 
   push();
   translate(300,360);
-  rotate(TWO_PI/count);
+  rotate(TWO_PI/count * i);   
   drawFlowerNine();
   fill(c1);
   ellipse(0,0,flowerSize,flowerSize);
