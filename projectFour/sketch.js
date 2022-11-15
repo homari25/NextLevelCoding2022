@@ -22,7 +22,7 @@ let flowerChanger = document.getElementById("flowerChanger");
 //flower
 // let randomX = random(100,400);
 // let randomY = random(100,400);
-let petalSize = random(100,400);
+let petalSize = Math.random() * 400 - 100;
 let flowerSize = petalSize - 60;
 
 function setup() {
