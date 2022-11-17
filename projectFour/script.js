@@ -9,17 +9,19 @@ let lushname = ["Outback Mate","Karma","Sleepy","Honey I washed the kids","Chris
 let soapNameInput = document.getElementById("soapName")
 
 //pulldown list
-function favTutorial() {
-let mylist = document.getElementById("myList");  
-let soapNameDown = mylist.options[mylist.selectedIndex].text;  
-console.log(soapNameDown);
-}
+
 
 console.log(opensheet_url);
 
+let mylist = document.getElementById("myList");  
+
+
 function submit () {
 
-let soapName = soapNameInput.value;
+// let soapName = soapNameInput.value;
+let soapNameDown = mylist.options[mylist.selectedIndex].text;  
+console.log(soapNameDown);
+
 fetch(opensheet_url)
     .then(function (response) {
         return response.json();
@@ -35,7 +37,7 @@ fetch(opensheet_url)
         dataArr.push([items,sweetness])
         for (let i = 0; i < lushname.length; i++) {
             // if(item[itemNum] == lushname[itemNum]) {
-        if(soapNameDown.value == items) {
+        if(soapNameDown == items) {
         count = map(sweetness,1,10,10,60);
         refresh = map(refreshyness,10,1,10,100);
         c1 = `#${flowerColor}`
@@ -43,9 +45,10 @@ fetch(opensheet_url)
         console.log(count);
 				//do something with the data here
                 // }
-        } else {
-            console.log("Oops,sorry! We don't have that.")
-        }
+        } 
+        // else {
+        //     console.log("Oops,sorry! We don't have that.")
+        // }
         }
         }
     })
@@ -57,5 +60,3 @@ fetch(opensheet_url)
 function map(value, low1, high1, low2, high2) {
     return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
 }
-
-
