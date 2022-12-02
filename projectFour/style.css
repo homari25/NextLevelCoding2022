@@ -21,3 +21,11 @@ h2{
 p{
    font-family:"IBMplexSans", sans-serif;
 }
+
+#myList {
+  margin:10px;
+}
+
+#save {
+  left:100%;
+}

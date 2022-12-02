@@ -10,17 +10,83 @@ let soapNameInput = document.getElementById("soapName")
 
 //pulldown list
 
+//position
+let randomX, randomY;
+let randomX2, randomY2;
+let randomX3, randomY3;
+let randomX4, randomY4;
+let randomX5, randomY5;
+let randomX6, randomY6;
+let randomX7, randomY7;
+let randomX8, randomY8;
+let randomX9, randomY9;
+let randomX10, randomY10;
+let randomX11, randomY11;
+let randomX12, randomY12;
+let randomX13, randomY13;
+let randomX14, randomY14;
+let randomX15, randomY15;
+let randomX16, randomY16;
+let randomX17, randomY17;
+let randomX18, randomY18;
+let randomX19, randomY19;
+let randomX20, randomY20;
 
-console.log(opensheet_url);
+
+
+// console.log(opensheet_url);
 
 let mylist = document.getElementById("myList");  
 
 
 function submit () {
-
 // let soapName = soapNameInput.value;
 let soapNameDown = mylist.options[mylist.selectedIndex].text;  
-console.log(soapNameDown);
+// console.log(soapNameDown);
+
+randomX = 50;
+randomY = random(100,windowHeight - 100);
+randomX2 = 100;
+randomY2 = random(100,windowHeight - 100 );
+randomX3 = 150;
+randomY3 = random(100,windowHeight - 100 );
+randomX4 = 200;
+randomY4 = random(100,windowHeight - 100 );
+randomX5 = 250;
+randomY5 = random(100,windowHeight - 100 );
+randomX6 = 300;
+randomY6 = random(100,windowHeight - 100 );
+randomX7 = 350;
+randomY7 = random(100,windowHeight - 100 );
+randomX8 = 400;
+randomY8 = random(100,windowHeight - 100 );
+randomX9 = 450;
+randomY9 = random(100,windowHeight - 100 );
+randomX10 = 500;
+randomY10 = random(100,windowHeight - 100 );
+randomX11 = 550;
+randomY11 = random(100,windowHeight - 100 );
+randomX12 = 600;
+randomY12 = random(100,windowHeight - 100 );
+randomX13 = 650;
+randomY13 = random(100,windowHeight - 100 );
+randomX14 = 700;
+randomY14 = random(100,windowHeight - 100 );
+randomX15 = 750;
+randomY15 = random(100,windowHeight - 100 );
+randomX16 = 800;
+randomY16 = random(100,windowHeight - 100 );
+randomX17 = 850;
+randomY17 = random(100,windowHeight - 100 );
+randomX18 = 900;
+randomY18 = random(100,windowHeight - 100 );
+randomX19 = 925;
+randomY19 = random(100,windowHeight - 100 );
+randomX20 = 950;
+randomY20 = random(100,windowHeight - 100 );
+
+
+
 
 fetch(opensheet_url)
     .then(function (response) {
@@ -33,16 +99,20 @@ fetch(opensheet_url)
         let refreshyness = parseFloat(datapoint.Refreshness);
         let backgroundColor = datapoint.Background_color;
         let flowerColor = datapoint.Flower_color;
+        let middleColor = datapoint.Middleground_color;
         
         dataArr.push([items,sweetness])
         for (let i = 0; i < lushname.length; i++) {
             // if(item[itemNum] == lushname[itemNum]) {
         if(soapNameDown == items) {
-        count = map(sweetness,1,10,10,60);
-        refresh = map(refreshyness,10,1,10,100);
+        count = map(sweetness,1,10,20,30);
+        refresh = map(refreshyness,10,1,3,10);
+        softness = map(sweetness,1,10,2,10);
         c1 = `#${flowerColor}`
         c2 = `#${backgroundColor}`;
-        console.log(count);
+        c3 = `#${middleColor}`;
+
+        // console.log(count);
 				//do something with the data here
                 // }
         } 
