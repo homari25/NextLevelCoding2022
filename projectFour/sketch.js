@@ -7,15 +7,13 @@ let refreshSlider = document.getElementById("refreshSlider");
 
 //color
 
-let c1 = "rgb(125)"; //flower
-let c2 = "rgb(0)" //background
-let c3 = "rgb(255)" //middle flower
+let c1 = "rgb(120,120,120)"; //flower
+let c2 = "rgb(125)"; //background
+let c3 = "rgb(255)"; //middle flower
 let changerElem = document.getElementById("backgroundChanger");
 let flowerChanger = document.getElementById("flowerChanger");
 
 let myFlowers = [];
-
-
 
 //flower
 
