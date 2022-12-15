@@ -6,13 +6,16 @@ let countSlider = document.getElementById("countSlider");
 let refreshSlider = document.getElementById("refreshSlider");
 
 //color
-let c1 = "rgb(255,125,0)"; //flower
-let c2 = "rgb(125)" //background
+
+let c1 = "rgb(125)"; //flower
+let c2 = "rgb(0)" //background
 let c3 = "rgb(255)" //middle flower
 let changerElem = document.getElementById("backgroundChanger");
 let flowerChanger = document.getElementById("flowerChanger");
 
 let myFlowers = [];
+
+
 
 //flower
 
