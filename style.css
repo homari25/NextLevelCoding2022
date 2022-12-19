@@ -36,43 +36,43 @@ h2:hover {
 
 
 .projectOne:hover .image {
-    width:600px;
-    height:480px;
+    width:900px;
+    height:720px;
     display:block;
-    top:0px;
-    left:480px;
+    top:-100px;
+    left:180%;
 }
 
 .projectTwo:hover .image {
-    width:600px;
-    height:480px;
+    width:900px;
+    height:720px;
     display:block;
-    top:0px;
-    left:480px;
+    top:-100px;
+    left:180%;
 }
 
 .projectThree:hover .image {
-    width:600px;
-    height:480px;
+    width:900px;
+    height:720px;
     display:block;
-    top:0px;
-    left:480px;
+    top:-100px;
+    left:180%;
 }
 
 .breather:hover .image {
-    width:600px;
-    height:480px;
+    width:900px;
+    height:720px;
     display:block;
-    top:0px;
-    left:480px;
+    top:-100px;
+    left:180%;
 }
 
 .projectFour:hover .image {
-    width:600px;
-    height:480px;
+    width:900px;
+    height:720px;
     display:block;
-    top:0px;
-    left:480px;
+    top:-100px;
+    left:180%;
 }
 
 .name{
