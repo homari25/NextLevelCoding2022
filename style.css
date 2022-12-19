@@ -22,7 +22,7 @@ h1{
 
 h2{
     font-size: 36px;
-    /* line-height:1.25; */
+    line-height:1.25;
     color: #020202;
     font-family:'Real Text Pro', sans-serif;
     margin:0px;
@@ -33,13 +33,6 @@ h2:hover {
     font-weight:bold;
 }
 
-/* .projects:hover ~.description {
-    display:block;
-} */
-
-/* .projects:hover ~.proimagesspace {
-    display:block;
-} */
 
 
 .projectOne:hover .image {
@@ -47,7 +40,7 @@ h2:hover {
     height:480px;
     display:block;
     top:0px;
-    left:240px;
+    left:480px;
 }
 
 .projectTwo:hover .image {
@@ -55,7 +48,7 @@ h2:hover {
     height:480px;
     display:block;
     top:0px;
-    left:240px;
+    left:480px;
 }
 
 .projectThree:hover .image {
@@ -63,7 +56,7 @@ h2:hover {
     height:480px;
     display:block;
     top:0px;
-    left:240px;
+    left:480px;
 }
 
 .breather:hover .image {
@@ -71,7 +64,7 @@ h2:hover {
     height:480px;
     display:block;
     top:0px;
-    left:240px;
+    left:480px;
 }
 
 .projectFour:hover .image {
@@ -79,7 +72,7 @@ h2:hover {
     height:480px;
     display:block;
     top:0px;
-    left:240px;
+    left:480px;
 }
 
 .name{
@@ -131,12 +124,12 @@ h2:hover {
 }
 
 .description {
-    width:20vw;
-    height:80vh;
+    /* width:20vw;
+    height:80vh; */
+    line-height:1.5;
     position:relative;
     top:0px;
     background-color:transparent;
-    line-height:1.5;
     left: 60px;
     /* display:block; */
     display:none;
@@ -163,28 +156,6 @@ h2:hover {
     display:none;
 }
 
-
-/* .projectTwo {
-    width:100%;
-    height:100%;
-    position:absolute;
-    background-color:transparent;
-    display:block;
-    line-height:0.9;
-    top:50vh;
-    left:0vw;
-}
-
-.projectThree {
-    width:100%;
-    height:100%;
-    position:absolute;
-    background-color:transparent;
-    display:block;
-    line-height:0.9;
-    top:70vh;
-    left:0vw;
-} */
 
 a {
     color:black;
