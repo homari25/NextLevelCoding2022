@@ -29,7 +29,7 @@ let midFlower = sizeFlower - 30;
 let spacing = 120;
 
 function setup() {
-  createCanvas(1000,windowHeight);
+  createCanvas(windowWidth,windowHeight);
   angleMode(RADIANS);
   rectMode(CENTER);
   s = new Scribble;
