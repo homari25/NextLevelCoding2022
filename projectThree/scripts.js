@@ -21,28 +21,28 @@ date = dateInput.value;
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key':'771845e547msh3cf2aeb936308e7p110648jsn9a26e17e8605',
+		'X-RapidAPI-Key': '771845e547msh3cf2aeb936308e7p110648jsn9a26e17e8605',
 		'X-RapidAPI-Host': 'forward-reverse-geocoding.p.rapidapi.com'
 	}
 };
 
 fetch(`https://forward-reverse-geocoding.p.rapidapi.com/v1/search?q=${place}&accept-language=en&polygon_threshold=0.0`, options)
-	.then(response => response.json())
+.then(response => response.json())
 	.then(response => {
-  console.log(response[0].lat,response[0].lon);
+  console.log(date, response[0].lat,response[0].lon);
   lat = response[0].lat;
   lng = response[0].lon;
 
 const optionsTwo = {
-	method: 'GET',
+  method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '771845e547msh3cf2aeb936308e7p110648jsn9a26e17e8605',
+		'X-RapidAPI-Key': '8d57b31ce2mshb1905ff4e71c1dbp18da73jsn0b2243feab8c',
 		'X-RapidAPI-Host': 'sun-calculator.p.rapidapi.com'
 	}
 };
 
 fetch(`https://sun-calculator.p.rapidapi.com/sunrise/?date=${date}&lat=${lat}&lng=${lng}`, optionsTwo)
-	.then(response => response.json())
+.then(response => response.json())
 	.then(response => {
    console.log(response.sunrise, response.sunset);
    let sunrise = response.sunrise;
