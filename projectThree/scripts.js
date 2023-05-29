@@ -34,21 +34,26 @@ fetch(`https://forward-reverse-geocoding.p.rapidapi.com/v1/search?q=${place}&acc
   lng = response[0].lon;
 
 const optionsTwo = {
-  method: 'GET',
+	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '8d57b31ce2mshb1905ff4e71c1dbp18da73jsn0b2243feab8c',
-		'X-RapidAPI-Host': 'sun-calculator.p.rapidapi.com'
-	}
+		'X-RapidAPI-Key': '771845e547msh3cf2aeb936308e7p110648jsn9a26e17e8605',
+		'X-RapidAPI-Host': 'sunrise-sunset-times.p.rapidapi.com'
+  }
 };
 
-fetch(`https://sun-calculator.p.rapidapi.com/sunrise/?date=${date}&lat=${lat}&lng=${lng}`, optionsTwo)
+// fetch(`https://sun-calculator.p.rapidapi.com/sunrise/?date=${date}&lat=${lat}&lng=${lng}`, optionsTwo)
+fetch(`https://sunrise-sunset-times.p.rapidapi.com/getSunriseAndSunset?date=${date}&latitude=${lat}&longitude=${lng}&timeZoneId=America%2FNew_York`, optionsTwo)
 .then(response => response.json())
 	.then(response => {
-   console.log(response.sunrise, response.sunset);
    let sunrise = response.sunrise;
    let sunset = response.sunset;
    let sunlength = (sunset - sunrise)/3600;
-   console.log(sunlength + "hours");
+  console.log(sunrise.getTime(),sunset.getTime());
+  // let sunriseTime = sunrise.getTime();
+  // let sunsetTime = sunset.getTime();
+  // console.log(sunriseTime, sunsetTime);
+  //  let sunlength = sunriseTime - sunsetTime;
+   console.log(sunlength/3600);
    info.innerHTML = "The length of the daylight is " + Math.round(sunlength * 100) / 100 + " hours"
 
 function map(value, low1, high1, low2, high2) {
