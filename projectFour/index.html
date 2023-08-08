@@ -12,6 +12,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="p5.js"></script>
         <script src="p5.min.js"></script>
+        <style>
+            @font-face {
+                font-family: "lushfont";
+                src: url("LushHandwritten-Bold.otf") format("opentype");
+            }
+            /* The rest of your CSS styles can go here */
+        </style>
+    
         <link rel = "lushfont" href="LushHandwritten-Bold.otf">
         <link rel = "IBMplexSans" href="IBMPlexSans-Regular.ttf">    
         <link rel="stylesheet" href="style.css">
@@ -37,7 +45,7 @@
             <!-- <input type="text" id="soapName" placeholder="Name of the soap bar" > -->
             <!-- <input type="button" id="submitButton" value="Submit" onclick="submit()"> -->
             <select id = "myList" name = "soap">  
-                <option> ---Choose Our Soap--- </option>  
+                <option>---Choose Our Soap---</option>  
                 <option>Outback Mate</option>  
                 <option>Karma</option>  
                 <option>Sleepy</option>  
@@ -54,8 +62,11 @@
                 <option>Olive Tree</option>  
                 <option>Goddess</option>  
                 </select>  
-            <input type="button" id="submitButton" value="Submit" onclick="submit()">
-            <input type="button" id="save" value="Save" onclick="save()">
+            <input type="button" id="submitButton" value="Check!" onclick="submit()">
+            <p id="soapname"></p>
+            <!-- <input type="button" id="save" value="Save" onclick="save()"> -->
+            <img id="soap"></img>
+            <div id="out">Sorry, out of season!</div>
         </main>
         <script src="script.js"></script>
         <script src="sketch.js"></script>

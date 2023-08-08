@@ -41,8 +41,39 @@ let mylist = document.getElementById("myList");
 
 function submit () {
 // let soapName = soapNameInput.value;
+canvas.style.display = "block";
 let soapNameDown = mylist.options[mylist.selectedIndex].text;  
 // console.log(soapNameDown);
+let soapImage = document.getElementById("soap");
+
+// if(soapNameDown===soapImage) {
+// soapImage.src = "/picture/" + soapNameDown + ".png";
+// } else {
+//     soapImage.style.display = "none"
+// }
+
+
+let expectedImagePath = "/picture/" + soapNameDown + ".png";
+let outofStock = document.getElementById("out");
+
+  fetch(expectedImagePath)
+    .then(response => {
+      if (response.ok) {
+        // Image exists
+        soapImage.src = expectedImagePath;
+        soapImage.style.display = "inline"; // Show the image
+        outofStock.style.display = "none";
+      
+    } else {
+        // Image doesn't exist
+        soapImage.style.display = "none"; // Hide the image
+        outofStock.style.display = "block";
+      }
+    })
+    .catch(error => {
+      // Image doesn't exist
+      soapImage.style.display = "none"; // Hide the image
+    });
 
 randomX = 50;
 randomY = random(100,windowHeight - 100);
@@ -125,6 +156,8 @@ fetch(opensheet_url)
     .catch(function (err) {
         console.log("Something went wrong!", err);
     });
+
+    // if (soapNameDown==)
 }
 
 function map(value, low1, high1, low2, high2) {
