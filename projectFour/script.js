@@ -56,6 +56,7 @@ let soapImage = document.getElementById("soap");
 let expectedImagePath = "/picture/" + soapNameDown + ".png";
 let outofStock = document.getElementById("out");
 
+console.log(expectedImagePath)
   fetch(expectedImagePath)
     .then(response => {
       if (response.ok) {
