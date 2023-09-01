@@ -61,7 +61,7 @@ let outofStock = document.getElementById("out");
       if (response.ok) {
         // Image exists
         soapImage.src = expectedImagePath;
-        soapImage.style.display = "inline"; // Show the image
+        soapImage.style.display = "block"; // Show the image
         outofStock.style.display = "none";
       
     } else {
