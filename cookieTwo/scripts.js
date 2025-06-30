@@ -36,6 +36,8 @@ document.addEventListener("mousedown", function(e){
   document.body.appendChild(cookieImg);
 
     setCookie('cookiePosX', cookiePosX, 999);
+    setCookie('cookiePosY', cookiePosY, 999);
+
     // cookieElement.style.width = cookieSize + "px";
     // cookieElement.style.height = cookieSize + "px";
 })
